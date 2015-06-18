@@ -1,0 +1,23 @@
+{
+  "name": "geekin",
+  "version": "0.0.0",
+  "homepage": "https://github.com/brentoneill/geekin",
+  "authors": [
+    "Brent O'Neill & Courtland Gaba"
+  ],
+  "description": "Website for geekin radio",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.3.0",
+    "normalize.css": "~3.0.3"
+  }
+}
