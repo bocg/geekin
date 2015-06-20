@@ -9,4 +9,8 @@ go to project directory, then enter the following commands:
 
 `sass --watch main.scss:../css/main.css`
 
+You are now watching for changes to any .scss file that is imported in main.scss.
 
+To add additional files to watch, create the file like so: `_filename.scss`
+
+Then add them to the main.scss file by inserting the following line at the end of the main.scss file: `@import 'filename.scss'`
