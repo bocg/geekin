@@ -1,0 +1,45 @@
+nav {
+  background-color: transparent;
+  padding-top:60px;
+
+}
+
+.nav-logo {
+  max-height:120px;
+}
+
+.nav-left,
+.nav-right {
+  display:inline-block;
+  float:left;
+}
+
+.nav-left {
+  width:20%;
+}
+
+.nav-right {
+  width:80%;
+  text-align:center;
+  ul {
+    margin-top: 40px;
+    li {
+      display:inline-block;
+      width:16%;
+      a {
+        display: block;
+        text-transform: uppercase;
+        color:white;
+        opacity:.5;
+        letter-spacing:4px;
+        transition: all .3s ease-out;
+        &.active {
+          opacity:1;
+        }
+        &:hover {
+          opacity:1;
+        }
+      }
+    }
+  }
+}

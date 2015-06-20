@@ -1,0 +1,28 @@
+// BOX MODEL
+* {
+  box-sizing: border-box;
+}
+
+// COLORS
+$orange: #FF7E00;
+$purple-light: #B6BCCD;
+$purple-dark: #07143A;
+
+// FLOAT CLEAR
+.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.ccontainer {
+  max-width:1154px;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}

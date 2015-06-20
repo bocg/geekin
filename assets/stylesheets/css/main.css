@@ -1,0 +1,231 @@
+/* ------------------------------------------ */
+/* MAIN STYLESHEET FOR GEEKIN-RADIO'S WEBSITE */
+/* ------------------------------------------ */
+* {
+  box-sizing: border-box; }
+
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+.ccontainer {
+  max-width: 1154px; }
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none; }
+
+body {
+  font-size: 14px;
+  color: #07143A; }
+
+a:hover {
+  text-decoration: none; }
+
+nav {
+  background-color: transparent;
+  padding-top: 60px; }
+
+.nav-logo {
+  max-height: 120px; }
+
+.nav-left,
+.nav-right {
+  display: inline-block;
+  float: left; }
+
+.nav-left {
+  width: 20%; }
+
+.nav-right {
+  width: 80%;
+  text-align: center; }
+  .nav-right ul {
+    margin-top: 40px; }
+    .nav-right ul li {
+      display: inline-block;
+      width: 16%; }
+      .nav-right ul li a {
+        display: block;
+        text-transform: uppercase;
+        color: white;
+        opacity: .5;
+        letter-spacing: 4px;
+        transition: all .3s ease-out; }
+        .nav-right ul li a.active {
+          opacity: 1; }
+        .nav-right ul li a:hover {
+          opacity: 1; }
+
+header {
+  width: 100%;
+  height: 700px;
+  background-image: url("../../img/Background.png");
+  background-size: cover;
+  background-position: center; }
+
+.caption {
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  max-width: 550px;
+  width: 50%;
+  color: white; }
+  .caption h1 {
+    font-weight: lighter;
+    font-size: 3.618em;
+    letter-spacing: 4px;
+    margin-bottom: 10px; }
+  .caption p {
+    font-size: 1.218em;
+    margin-bottom: 40px; }
+
+.caption-button-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 680px;
+  width: 65%; }
+
+.btn-caption {
+  font-weight: bolder;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  padding: 20px 60px;
+  text-align: center;
+  width: 340px;
+  border-radius: 40px; }
+  .btn-caption:first-child {
+    margin-right: 30px; }
+
+.btn-caption-dark {
+  background-color: rgba(0, 0, 0, 0.35); }
+
+.btn-caption-orange {
+  background-color: #FF7E00; }
+
+footer {
+  color: #07143A;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  footer .col-logo {
+    text-align: center; }
+  footer h4 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  footer ul li {
+    margin-bottom: 10px; }
+  footer i.fa {
+    font-size: 2.218em;
+    text-align: center;
+    float: left;
+    width: 46%;
+    cursor: pointer;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid rgba(7, 20, 58, 0.5);
+    border-radius: 8px; }
+    footer i.fa:first-child {
+      margin-right: 8%; }
+  footer i, footer p, footer a {
+    color: #07143A;
+    opacity: .5; }
+  footer i, footer a {
+    transition: all .3s ease-out; }
+    footer i:hover, footer a:hover {
+      opacity: 1; }
+  footer p {
+    margin-bottom: 20px; }
+
+/* ---------------- */
+/*   Page Specific  */
+/* ---------------- */
+.social-bar {
+  height: 126px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #e3e6ec;
+  color: #B6BCCD; }
+  .social-bar ul {
+    height: 100%;
+    padding: 0px; }
+    .social-bar ul li {
+      font-size: 2.218em;
+      height: 100%;
+      float: left;
+      display: inline-block;
+      width: 20%;
+      text-align: center;
+      border-right: 1px solid #e3e6ec; }
+      .social-bar ul li a {
+        padding: 20px;
+        padding-top: 40px;
+        display: block;
+        height: 100%;
+        color: #B6BCCD;
+        transition: color .3s ease-out; }
+        .social-bar ul li a:hover {
+          color: #7984a4; }
+      .social-bar ul li:last-child {
+        border-right: 0; }
+
+.subscribe {
+  width: 100%;
+  height: 146px;
+  background-color: #FF7E00;
+  color: white;
+  padding-top: 60px; }
+  .subscribe button.btn-subscribe {
+    margin-top: 10px;
+    border: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    transition: opacity .3s ease-out;
+    outline: none;
+    font-size: 1.218em; }
+    .subscribe button.btn-subscribe:hover {
+      opacity: .7; }
+  .subscribe input {
+    width: 100%;
+    padding-bottom: 8px;
+    margin: 0 auto;
+    border: 0;
+    border-bottom: 2px solid #ff8b1a;
+    transition: border-color .3s ease-out;
+    background-color: transparent;
+    color: white;
+    font-size: 2.218em;
+    font-weight: lighter; }
+    .subscribe input:focus {
+      outline: none;
+      border-color: #ffa54d; }
+    .subscribe input:hover {
+      border-color: #ffa54d; }
+  .subscribe ::-webkit-input-placeholder {
+    color: white; }
+  .subscribe :-moz-placeholder {
+    /* Firefox 18- */
+    color: white; }
+  .subscribe ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: white; }
+  .subscribe :-ms-input-placeholder {
+    color: white; }
+
+/* ---------------- */
+/*     Utilities    */
+/* ---------------- */
+
+/*# sourceMappingURL=main.css.map */
