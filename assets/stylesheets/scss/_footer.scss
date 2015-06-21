@@ -25,7 +25,7 @@ footer {
     padding:15px;
     padding-left:25px;
     padding-right:25px;
-    border: 1px solid rgba($purple-dark, .5);
+    border: $border-light-purple;
     border-radius: 8px;
     &:first-child {
       margin-right:8%;

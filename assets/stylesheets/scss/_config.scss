@@ -7,6 +7,7 @@
 $orange: #FF7E00;
 $purple-light: #B6BCCD;
 $purple-dark: #07143A;
+$purple-text: #8E93A2;
 
 // FLOAT CLEAR
 .clearfix:after {
@@ -17,12 +18,28 @@ $purple-dark: #07143A;
    clear: both;
 }
 
-.ccontainer {
+.container {
   max-width:1154px;
 }
+
+
 
 ul {
   padding: 0px;
   margin: 0px;
   list-style: none;
 }
+
+img {
+  max-width: 100%;
+}
+
+.pll {
+  padding-left: 20px;
+}
+
+.prl {
+  padding-right: 20px;
+}
+
+$border-light-purple: 1px solid lighten($purple-light, 15%);
