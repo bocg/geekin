@@ -1,10 +1,31 @@
 body {
   font-size: 14px;
-  color: $purple-dark;
+  color: $purple-text;
 }
 
 a {
   &:hover {
     text-decoration: none;
+  }
+}
+
+
+.section-header,
+.section-subheader {
+  text-align: center;
+}
+
+.section-header {
+  font-weight:lighter;
+  font-size:3em;
+  letter-spacing:6px;
+  margin-bottom:80px;
+  color:$purple-dark;
+  .section-subheader {
+    margin-top: 14px;
+    font-size:.268em;
+    letter-spacing: 1px;
+    font-weight:normal;
+    color: darken($purple-light, 15%);
   }
 }
