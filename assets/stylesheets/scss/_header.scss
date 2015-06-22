@@ -60,3 +60,68 @@ a.btn-caption {
 .btn-caption-orange {
   background-color: $orange;
 }
+
+.header-logo {
+  max-width: 280px;
+  width: 50%;
+  margin: 0 auto;
+  display:block;
+  margin-top: 140px;
+}
+
+.header-home {
+  height:1000px;
+}
+
+.download-button-wrapper {
+  max-width:500px;
+  width:80%;
+  margin: 0 auto;
+  color:white;
+  text-align: center;
+}
+
+.download-button {
+  float:left;
+  width: 45%;
+  margin-right:10%;
+  padding:10px;
+  display: inline-block;
+  border: 2px solid rgba(white, .6);
+  border-radius:4px;
+  color:white;
+  background-color: transparent;
+  transition: all .3s ease-out;
+  cursor:pointer;
+  &:hover {
+    background-color: rgba(0,0,0,.3);
+    border-color: transparent;
+  }
+  &:last-child {
+    margin-right:0;
+  }
+  i {
+    display: inline-block;
+    margin-right: 6px;
+    vertical-align: top;
+    margin-top:4px;
+  }
+  p {
+    padding-left: 4px;
+    text-align: left;
+    margin-bottom: 0px;
+    &:first-child {
+      font-size:.818em;
+    }
+    &:last-child {
+      font-size:1.218em;
+    }
+  }
+  small {
+    display:block;
+  }
+}
+
+.download-button-text {
+  display:inline-block;
+}
