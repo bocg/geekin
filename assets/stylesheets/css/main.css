@@ -29,7 +29,7 @@ img {
   padding-right: 20px; }
 
 body {
-  font-size: 11px;
+  font-size: 14px;
   color: #8E93A2; }
 
 a:hover {
@@ -53,8 +53,8 @@ a:hover {
     color: #8992ae; }
 
 .section {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   border-bottom: 1px solid #e3e6ec;
   font-size: 1.218em; }
   .section p {
@@ -106,7 +106,7 @@ nav {
         text-transform: uppercase;
         color: white;
         opacity: .5;
-        letter-spacing: 3px;
+        letter-spacing: 4px;
         transition: all .3s ease-out; }
         .nav-center ul li a.active,
         .nav-right ul li a.active {
@@ -141,14 +141,14 @@ header.header-home .caption {
 
 header {
   width: 100%;
-  height: 525px;
+  height: 700px;
   background-image: url("../../img/Background.png");
   background-size: cover;
   background-position: center; }
 
 .caption {
   margin: 0 auto;
-  margin-top: 52px;
+  margin-top: 140px;
   text-align: center;
   max-width: 550px;
   width: 50%;
@@ -192,14 +192,14 @@ a.btn-caption {
   background-color: #FF7E00; }
 
 .header-logo {
-  max-width: 240px;
+  max-width: 280px;
   width: 50%;
   margin: 0 auto;
   display: block;
   margin-top: 140px; }
 
 .header-home {
-  height: 810px; }
+  height: 1000px; }
 
 .download-button-wrapper {
   max-width: 500px;
@@ -246,8 +246,8 @@ a.btn-caption {
 
 footer {
   color: #07143A;
-  padding-top: 60px;
-  padding-bottom: 30px; }
+  padding-top: 100px;
+  padding-bottom: 100px; }
   footer .col-logo {
     text-align: center; }
   footer h4 {
@@ -311,7 +311,7 @@ footer {
       opacity: .8; }
 
 .social-bar {
-  height: 97px;
+  height: 126px;
   width: 100%;
   background-color: white;
   border-bottom: 1px solid #e3e6ec;
@@ -329,7 +329,7 @@ footer {
       border-right: 1px solid #e3e6ec; }
       .social-bar ul li a {
         padding: 20px;
-        padding-top: 33px;
+        padding-top: 40px;
         display: block;
         height: 100%;
         color: #B6BCCD;
@@ -341,10 +341,10 @@ footer {
 
 .subscribe {
   width: 100%;
-  height: 111px;
+  height: 146px;
   background-color: #FF7E00;
   color: white;
-  padding-top: 40px; }
+  padding-top: 60px; }
   .subscribe button.btn-subscribe {
     margin-top: 10px;
     border: 0;
