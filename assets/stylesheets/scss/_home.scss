@@ -1,0 +1,115 @@
+.feature-heading {
+  color: $purple-dark;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.feature-text {
+  padding-top:140px;
+  p {
+    line-height: 1.6;
+  }
+}
+
+.quotes-slider {
+  height:420px;
+  width:100%;
+  background-color: $purple-xlight;
+}
+
+.container-quotes {
+  max-width:540px;
+  width:80%;
+  margin:0 auto;
+}
+
+.quote {
+  position: relative;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom:80px;
+  @extend .quotes-font;
+  i.fa {
+    font-size:.318em;
+    &:first-child {
+      color:$orange;
+    }
+  }
+}
+
+.quote-icon-wrapper {
+  margin:0 auto;
+  margin-bottom: 20px;
+  width:65px;
+  display:block;
+}
+
+
+.quote .quote-mark i.fa {
+  color: $purple-dark;
+  font-size:2.218em;
+}
+
+.quote-mark {
+  position: absolute;
+  top:100px;
+}
+
+.quote-left {
+  left: -60px;
+}
+.quote-right{
+  right: -60px;
+}
+
+.about-feature {
+  margin-bottom: 40px;
+  p {
+    line-height:1.6;
+  }
+}
+
+.about-photo {
+  border-radius: 50%;
+  max-height:140px;
+}
+
+.about-name {
+  text-transform: uppercase;
+  color:$purple-dark;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.about-title {
+  @extend .quotes-font;
+  color: $purple-light;
+  text-transform: none;
+  font-size:1.218em;
+  margin-bottom:20px;
+}
+
+.about-feature {
+  text-align: center;
+}
+
+.row-aboutus {
+  margin-bottom:80px;
+}
+
+.section-blog {
+  background-image: url('../../img/Background.png');
+  background-size: cover;
+  background-position: center;
+  height:640px;
+  border-color:transparent;
+  h2.section-header {
+    color:white;
+    margin-top:100px;
+    p {
+      color:white;
+    }
+  }
+}

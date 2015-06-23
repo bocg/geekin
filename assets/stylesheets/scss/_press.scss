@@ -21,15 +21,6 @@
   .date {
     margin-right:30px;
   }
-  a {
-    color:$orange;
-    padding-bottom: 3px;
-    border-bottom: 1px solid rgba($orange, .2);
-    transition: opacity .3s ease-out;
-    &:hover {
-      opacity:.8;
-    }
-  }
 }
 
 .social-bar {

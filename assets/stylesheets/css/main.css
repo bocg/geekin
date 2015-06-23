@@ -1,6 +1,7 @@
 /* ------------------------------------------ */
 /* MAIN STYLESHEET FOR GEEKIN-RADIO'S WEBSITE */
 /* ------------------------------------------ */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300);
 * {
   box-sizing: border-box; }
 
@@ -35,6 +36,12 @@ body {
 a:hover {
   text-decoration: none; }
 
+.quotes-font, .quote, .about-title {
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  font-style: italic; }
+
 .section-header,
 .section-subheader {
   text-align: center; }
@@ -52,6 +59,18 @@ a:hover {
     font-weight: normal;
     color: #8992ae; }
 
+.orange-link {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  color: #FF7E00;
+  padding-bottom: 3px;
+  border-bottom: 1px solid rgba(255, 126, 0, 0.2);
+  transition: opacity .3s ease-out; }
+  .orange-link:hover {
+    color: #FF7E00;
+    opacity: .8; }
+
 .section {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -66,6 +85,9 @@ a:hover {
   max-width: 1024px;
   width: 80%;
   margin: 0 auto; }
+
+.section:nth-child(3) {
+  border-bottom: transparent; }
 
 nav {
   background-color: transparent;
@@ -170,7 +192,8 @@ header {
   max-width: 680px;
   width: 65%; }
 
-a.btn-caption {
+.btn-geekin {
+  display: inline-block;
   font-weight: bolder;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -179,17 +202,32 @@ a.btn-caption {
   min-width: 320px;
   text-align: center;
   border-radius: 40px;
-  transition: all .3s ease-out; }
-  a.btn-caption:first-child {
+  transition: opacity .3s ease-out; }
+  .btn-geekin:first-child {
     margin-right: 30px; }
-  a.btn-caption:hover {
+  .btn-geekin:hover {
+    color: inherit;
     opacity: .7; }
 
-.btn-caption-dark {
+.btn-geekin-dark {
   background-color: rgba(0, 0, 0, 0.35); }
 
-.btn-caption-orange {
+.btn-geekin-orange {
   background-color: #FF7E00; }
+
+.btn-geekin-transparent {
+  color: #07143A;
+  border: thin solid #B6BCCD; }
+
+.btn-geekin-white {
+  color: white;
+  border: thin solid white; }
+
+.btn-wrapper-center {
+  text-align: center;
+  margin-bottom: 30px; }
+  .btn-wrapper-center a:first-child {
+    margin-right: 0px; }
 
 .header-logo {
   max-width: 280px;
@@ -283,6 +321,97 @@ footer {
 /* ---------------- */
 /*   Page Specific  */
 /* ---------------- */
+.feature-heading {
+  color: #07143A;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bolder;
+  margin-bottom: 20px; }
+
+.feature-text {
+  padding-top: 140px; }
+  .feature-text p {
+    line-height: 1.6; }
+
+.quotes-slider {
+  height: 420px;
+  width: 100%;
+  background-color: #F9FBFF; }
+
+.container-quotes {
+  max-width: 540px;
+  width: 80%;
+  margin: 0 auto; }
+
+.quote {
+  position: relative;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .quote i.fa {
+    font-size: .318em; }
+    .quote i.fa:first-child {
+      color: #FF7E00; }
+
+.quote-icon-wrapper {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 65px;
+  display: block; }
+
+.quote .quote-mark i.fa {
+  color: #07143A;
+  font-size: 2.218em; }
+
+.quote-mark {
+  position: absolute;
+  top: 100px; }
+
+.quote-left {
+  left: -60px; }
+
+.quote-right {
+  right: -60px; }
+
+.about-feature {
+  margin-bottom: 40px; }
+  .about-feature p {
+    line-height: 1.6; }
+
+.about-photo {
+  border-radius: 50%;
+  max-height: 140px; }
+
+.about-name {
+  text-transform: uppercase;
+  color: #07143A;
+  letter-spacing: 4px;
+  margin-bottom: 20px; }
+
+.about-title {
+  color: #B6BCCD;
+  text-transform: none;
+  font-size: 1.218em;
+  margin-bottom: 20px; }
+
+.about-feature {
+  text-align: center; }
+
+.row-aboutus {
+  margin-bottom: 80px; }
+
+.section-blog {
+  background-image: url("../../img/Background.png");
+  background-size: cover;
+  background-position: center;
+  height: 640px;
+  border-color: transparent; }
+  .section-blog h2.section-header {
+    color: white;
+    margin-top: 100px; }
+    .section-blog h2.section-header p {
+      color: white; }
+
 .article-snippet {
   padding: 20px 0px;
   max-width: 700px;
@@ -302,13 +431,6 @@ footer {
     text-transform: uppercase; }
   .article-snippet .date {
     margin-right: 30px; }
-  .article-snippet a {
-    color: #FF7E00;
-    padding-bottom: 3px;
-    border-bottom: 1px solid rgba(255, 126, 0, 0.2);
-    transition: opacity .3s ease-out; }
-    .article-snippet a:hover {
-      opacity: .8; }
 
 .social-bar {
   height: 126px;
