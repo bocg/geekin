@@ -412,6 +412,9 @@ footer {
     .section-blog h2.section-header p {
       color: white; }
 
+.feature-text-discover {
+  padding-top: 60px; }
+
 .article-snippet {
   padding: 20px 0px;
   max-width: 700px;
