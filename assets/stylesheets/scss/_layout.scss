@@ -1,7 +1,6 @@
 .section {
   padding-top:100px;
   padding-bottom:100px;
-  border-bottom: 1px solid lighten($purple-light, 15%);
   font-size:1.218em;
   p {
     line-height:2;
@@ -14,8 +13,4 @@
   max-width:1024px;
   width:80%;
   margin: 0 auto;
-}
-
-.section:nth-child(3){
-  border-bottom:transparent;
 }
