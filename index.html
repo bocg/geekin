@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- VENDOR SCRIPTS -->
-  <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+  <!-- VENDOR STYLES -->
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
-
+  <link rel="stylesheet" href="owl.carousel/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="owl.carousel/owl-carousel/owl.theme.css">
+  <link rel="stylesheet" href="owl.carousel/owl-carousel/owl.transitions.css">
   <!-- CUSTOM STYLES -->
   <link rel="stylesheet" href="assets/stylesheets/css/main.css">
   <title>Geekin Radio - Index</title>
@@ -16,15 +17,16 @@
 </head>
 
 <body>
+
   <header class="header-home">
     <nav>
       <div class="container clearfix">
         <div class="nav-center">
           <ul>
-            <li><a href="">features</a></li>
-            <li><a href="/press.html">press</a></li>
-            <li><a href="">about us</a></li>
-            <li><a href="">blog</a></li>
+            <li><a href="features.html">features</a></li>
+            <li><a href="press.html">press</a></li>
+            <li><a href="about.html">about us</a></li>
+            <li><a href="blog-html">blog</a></li>
           </ul>
         </div>
       </div>
@@ -55,7 +57,6 @@
 </div> -->
     </div>
   </header>
-
 
   <div class="page-content">
 
@@ -110,28 +111,28 @@
     </div>
 
     <!--- QUOTES SLIDER -->
-<!--     <div class="quotes-slider">
-  <div class="container-quotes">
-    <div class="quote">
-      <p>This is one of the best apps I've ever tested. It has amazing potential to become the next go-to app for music.</p>
+<!--<div class="quotes-slider">
+      <div class="container-quotes" id="owl-carousel">
+        <div class="quote">
+          <p>This is one of the best apps I've ever tested. It has amazing potential to become the next go-to app for music.</p>
+        </div>
+        <div class="quote">
+          <p>This is one of the best apps I've ever tested. It has amazing potential to become the next go-to app for music.</p>
+        </div>
+        <div class="quote">
+          <p>This is one of the best apps I've ever tested. It has amazing potential to become the next go-to app for music.</p>
+        </div>
+      </div>
       <div class="quote-icon-wrapper">
-        <img src="assets/img/twitter-icon.png" alt="Quotes icon">
-      </div>
-      <div class="quote-controls-wrapper">
-        <i class="fa fa-circle"></i>
-        <i class="fa fa-circle"></i>
-        <i class="fa fa-circle"></i>
-        <i class="fa fa-circle"></i>
-      </div>
+            <img src="assets/img/twitter-icon.png" alt="Quotes icon">
+          </div>
       <div class="quote-mark quote-left">
         <i class="fa fa-quote-left"></i>
       </div>
       <div class="quote-mark quote-right">
         <i class="fa fa-quote-right"></i>
       </div>
-    </div>
-  </div>
-</div> -->
+    </div> -->
 
 
 
@@ -214,7 +215,12 @@
   </footer>
 
 
+<!-- VENDOR SCRIPTS -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="owl.carousel/owl-carousel/owl.carousel.js"></script>
 
+<!-- CUSTOM SCRIPTS -->
+<script src="assets/scripts/main.js"></script>
 
 </body>
 
