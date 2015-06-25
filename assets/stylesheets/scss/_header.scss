@@ -46,9 +46,7 @@ header {
   text-align: center;
   border-radius: 40px;
   transition: opacity .3s ease-out;
-  &:first-child {
-    margin-right:30px;
-  }
+
   &:hover {
     color:inherit;
     opacity: .7;
