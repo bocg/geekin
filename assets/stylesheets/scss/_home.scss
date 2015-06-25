@@ -1,8 +1,9 @@
 .feature-heading {
   color: $purple-dark;
   letter-spacing: 4px;
-  font-weight: bolder;
+  font-weight: 300;
   margin-bottom: 20px;
+  font-size: 50px;
 }
 
 .feature-image-shadow-left {
@@ -20,6 +21,8 @@
   padding-top:140px;
   p {
     line-height: 1.6;
+    font-size: 20px;
+    font-weight: 300;
   }
 }
 
@@ -131,4 +134,11 @@
 
 .feature-text-discover {
   padding-top: 60px;
+}
+
+.curve {
+  padding-bottom: 15px;
+}
+.curve-soundcloud {
+  padding-bottom:15px;
 }
