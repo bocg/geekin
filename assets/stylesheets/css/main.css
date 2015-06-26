@@ -541,6 +541,9 @@ footer {
 .about-container {
   background-color: #fbfbfb; }
 
+.gm-style-iw + div {
+  display: none; }
+
 /* ---------------- */
 /*     Utilities    */
 /* ---------------- */
