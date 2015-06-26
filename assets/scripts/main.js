@@ -19,8 +19,8 @@ $(document).ready(function() {
   function initialize() {
     map = new google.maps.Map(document.getElementById('map-canvas'), {
       zoom: 15,
-      center: {lat: 37.730, lng: -122.445},
-      offCenter: {lat: 37.725, lng: -122.445},
+      center: {lat: 32.799, lng: -79.942},
+      offCenter: {lat: 32.794, lng: -79.942},
       disableDefaultUI: true,
       navigationControl: false,
       mapTypeControl: false,
