@@ -64,11 +64,12 @@ $(document).ready(function() {
   var infowindow = new google.maps.InfoWindow({
       content: contentString,
       borderRadius: 30
-
   });
   google.maps.event.addListener(marker, 'click', function() {
     infowindow.open(map,marker);
   });
+  infowindow.open(map,marker)
+
   }
 
   google.maps.event.addDomListener(window, 'load', initialize);

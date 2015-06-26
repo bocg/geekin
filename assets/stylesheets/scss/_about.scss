@@ -6,3 +6,7 @@
 .about-container {
   background-color: $gray-light;
 }
+
+.gm-style-iw + div {
+  display: none;
+}
