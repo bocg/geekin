@@ -75,7 +75,7 @@ a:hover {
   padding-top: 125px;
   padding-bottom: 70px;
   font-size: 1.218em;
-  border-bottom: 1px solid #B6BCCD; }
+  border-bottom: 1px solid #e3e6ec; }
   .section p {
     line-height: 2;
     letter-spacing: 1px;
@@ -449,6 +449,9 @@ footer {
     text-transform: uppercase; }
   .article-snippet .date {
     margin-right: 30px; }
+
+.caption-button-wrapper a:first-child.btn-geekin {
+  margin-right: 20px; }
 
 .social-bar {
   height: 126px;
