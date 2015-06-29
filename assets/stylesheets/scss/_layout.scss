@@ -2,19 +2,12 @@
   padding-top:125px;
   padding-bottom:70px;
   font-size:1.218em;
+  border-bottom: 1px solid $purple-light;
   p {
     line-height:2;
     letter-spacing:1px;
     margin-bottom:30px;
   }
-}
-.section:nth-child(2) {
-  padding-top:0;
-  padding-bottom:70px;
-}
-.section:nth-child(3) {
-  padding-top:0;
-  padding-bottom:120px;
 }
 
 .inner-container {

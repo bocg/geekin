@@ -26,7 +26,8 @@ $(document).ready(function() {
       mapTypeControl: false,
       scaleControl: false,
       draggable: false,
-      scrollwheel: false
+      scrollwheel: false,
+      styles: [{"featureType":"all","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"color":"#f5f5f5"}]},{"featureType":"landscape.natural","elementType":"all","stylers":[{"color":"#f5f5f5"}]},{"featureType":"poi","elementType":"all","stylers":[{"color":"#e8e8e8"}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fe934c"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#666666"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#9a96c5"}]}]
     });
 
     // var placement = [
@@ -52,13 +53,12 @@ $(document).ready(function() {
 
     var contentString = '<div id="content">'+
 
-      '<h1 id="firstHeading" class="firstHeading">OUR LOCATION:</h1>'+
+      '<h1 id="firstHeading" class="firstHeading">FIND GEEKIN</h1>'+
       '<div id="bodyContent">'+
-      '<p>64 Rosewood Street,'+
-      '<p>Building 2, Suite 228'+
-      '<p>San Francisco, CA'+
-      '<p><a href="">GET DIRECTIONS</a>'
+      '<p>647 B King Street,'+
+      '<p>Charleston, 29403 SC'+
       '</div>'+
+      '<a href="http://google.com" target="_blank">Find us</a>'
       '</div>';
 
   var infowindow = new google.maps.InfoWindow({
