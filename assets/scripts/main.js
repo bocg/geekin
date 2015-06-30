@@ -15,7 +15,7 @@ $(document).ready(function() {
 
   });
 
-    var map;
+  var map;
   function initialize() {
     map = new google.maps.Map(document.getElementById('map-canvas'), {
       zoom: 15,
@@ -52,11 +52,10 @@ $(document).ready(function() {
     });
 
     var contentString = '<div id="content">'+
-
       '<h1 id="firstHeading" class="firstHeading">FIND GEEKIN</h1>'+
-      '<div id="bodyContent">'+
-      '<p>647 B King Street,'+
-      '<p>Charleston, 29403 SC'+
+      '<div id="mapMarkerWindow">'+
+      '<p>647 B King Street,</p>'+
+      '<p>Charleston, 29403 SC</p>'+
       '</div>'+
       '<a href="http://google.com" target="_blank">Find us</a>'
       '</div>';
