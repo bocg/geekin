@@ -86,7 +86,7 @@ a:hover {
 
 .section {
   padding-top: 125px;
-  padding-bottom: 70px;
+  padding-bottom: 125px;
   font-size: 1.218em;
   border-bottom: 1px solid #e3e6ec; }
   .section p {
@@ -334,16 +334,6 @@ header.header-home .caption {
   font-weight: 300;
   margin-bottom: 20px;
   font-size: 50px; }
-
-.feature-image-shadow-left {
-  -webkit-box-shadow: -5px 5px 30px -5px #999999;
-  -moz-box-shadow: -5px 5px 30px -5px #999999;
-  box-shadow: -5px 5px 30px -5px #999999; }
-
-.feature-image-shadow-right {
-  -webkit-box-shadow: 5px 5px 30px -5px #999999;
-  -moz-box-shadow: 5px 5px 30px -5px #999999;
-  box-shadow: 5px 5px 30px -5px #999999; }
 
 .feature-text {
   padding-top: 140px; }
