@@ -35,43 +35,6 @@ header {
   width:65%;
 }
 
-.btn-geekin {
-  margin: 0 9px;
-  display: inline-block;
-  font-weight: bolder;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: white;
-  padding:20px 40px;
-  min-width:320px;
-  text-align: center;
-  border-radius: 40px;
-  transition: opacity .3s ease-out;
-
-  &:hover {
-    color:inherit;
-    opacity: .7;
-  }
-}
-
-.btn-geekin-dark {
-  background-color:rgba(black, .35);
-}
-
-.btn-geekin-orange {
-  background-color: $orange;
-}
-
-.btn-geekin-transparent {
-  color: $purple-dark;
-  border: thin solid $purple-light;
-}
-
-.btn-geekin-white {
-  color: white;
-  border: thin solid white;
-}
-
 .btn-wrapper-center {
   text-align: center;
   margin-bottom: 30px;
