@@ -99,6 +99,9 @@ a:hover {
   width: 80%;
   margin: 0 auto; }
 
+.header-home nav {
+  padding-top: 120px; }
+
 nav {
   background-color: transparent;
   padding-top: 60px; }
@@ -112,10 +115,11 @@ nav {
   float: left; }
 
 .nav-left {
-  width: 20%; }
+  width: 25%;
+  text-align: right; }
 
 .nav-right {
-  width: 80%; }
+  width: 75%; }
 
 .nav-center {
   width: 70%;
@@ -139,7 +143,8 @@ nav {
         color: white;
         opacity: .5;
         letter-spacing: 4px;
-        transition: all .3s ease-out; }
+        transition: all .3s ease-out;
+        font-size: 1em; }
         .nav-center ul li a.active,
         .nav-right ul li a.active {
           opacity: 1; }
@@ -204,14 +209,17 @@ header {
     margin-right: 0px; }
 
 .header-logo {
-  max-width: 280px;
+  max-width: 240px;
   width: 50%;
   margin: 0 auto;
   display: block;
-  margin-top: 140px; }
+  margin-top: 100px;
+  margin-bottom: 60px; }
 
 .header-home {
   height: 800px; }
+  .header-home .caption {
+    margin-bottom: 20px; }
 
 .download-button-wrapper {
   max-width: 500px;
@@ -290,6 +298,9 @@ footer {
   footer p {
     margin-bottom: 20px; }
 
+/* ---------------- */
+/*       Modules    */
+/* ---------------- */
 .btn-geekin {
   display: inline-block;
   font-family: "proxima_nova_rgbold", "Helvetica", "Arial", sans-serif;
@@ -301,7 +312,8 @@ footer {
   min-width: 320px;
   text-align: center;
   border-radius: 40px;
-  transition: opacity .3s ease-out; }
+  transition: opacity .3s ease-out;
+  font-size: 1.118em; }
   .btn-geekin:hover {
     color: inherit;
     opacity: .7; }
@@ -319,6 +331,83 @@ footer {
 .btn-geekin-white {
   color: white;
   border: thin solid white; }
+
+.subscribe {
+  width: 100%;
+  height: 146px;
+  background-color: #FF7E00;
+  color: white;
+  padding-top: 60px; }
+  .subscribe button.btn-subscribe {
+    font-family: "proxima_nova_rgbold", "Helvetica", "Arial", sans-serif;
+    margin-top: 10px;
+    border: 0;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 4px;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    transition: opacity .3s ease-out;
+    outline: none;
+    font-size: 1.218em; }
+    .subscribe button.btn-subscribe:hover {
+      opacity: .7; }
+  .subscribe input {
+    width: 100%;
+    padding-bottom: 8px;
+    margin: 0 auto;
+    border: 0;
+    border-bottom: 2px solid #ff8b1a;
+    transition: border-color .3s ease-out;
+    background-color: transparent;
+    color: white;
+    font-size: 2.218em;
+    font-weight: lighter; }
+    .subscribe input:focus {
+      outline: none;
+      border-color: #ffa54d; }
+    .subscribe input:hover {
+      border-color: #ffa54d; }
+  .subscribe ::-webkit-input-placeholder {
+    color: white; }
+  .subscribe :-moz-placeholder {
+    /* Firefox 18- */
+    color: white; }
+  .subscribe ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: white; }
+  .subscribe :-ms-input-placeholder {
+    color: white; }
+
+.social-bar {
+  height: 126px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #e3e6ec;
+  color: #B6BCCD; }
+  .social-bar ul {
+    height: 100%;
+    padding: 0px; }
+    .social-bar ul li {
+      font-size: 2.218em;
+      height: 100%;
+      float: left;
+      display: inline-block;
+      width: 33%;
+      text-align: center;
+      border-right: 1px solid #e3e6ec; }
+      .social-bar ul li a {
+        padding: 20px;
+        padding-top: 40px;
+        display: block;
+        height: 100%;
+        color: #B6BCCD;
+        transition: color .3s ease-out; }
+        .social-bar ul li a:hover {
+          color: #7984a4; }
+      .social-bar ul li:last-child {
+        border-right: 0; }
 
 /* ---------------- */
 /*   Page Specific  */
@@ -457,84 +546,11 @@ header.header-home .caption {
 .caption-button-wrapper a:first-child.btn-geekin {
   margin-right: 20px; }
 
-.social-bar {
-  height: 126px;
-  width: 100%;
-  background-color: white;
-  border-bottom: 1px solid #e3e6ec;
-  color: #B6BCCD; }
-  .social-bar ul {
-    height: 100%;
-    padding: 0px; }
-    .social-bar ul li {
-      font-size: 2.218em;
-      height: 100%;
-      float: left;
-      display: inline-block;
-      width: 33%;
-      text-align: center;
-      border-right: 1px solid #e3e6ec; }
-      .social-bar ul li a {
-        padding: 20px;
-        padding-top: 40px;
-        display: block;
-        height: 100%;
-        color: #B6BCCD;
-        transition: color .3s ease-out; }
-        .social-bar ul li a:hover {
-          color: #7984a4; }
-      .social-bar ul li:last-child {
-        border-right: 0; }
-
-.subscribe {
-  width: 100%;
-  height: 146px;
-  background-color: #FF7E00;
-  color: white;
-  padding-top: 60px; }
-  .subscribe button.btn-subscribe {
-    margin-top: 10px;
-    border: 0;
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 4px;
-    color: white;
-    background-color: transparent;
-    text-transform: uppercase;
-    transition: opacity .3s ease-out;
-    outline: none;
-    font-size: 1.218em; }
-    .subscribe button.btn-subscribe:hover {
-      opacity: .7; }
-  .subscribe input {
-    width: 100%;
-    padding-bottom: 8px;
-    margin: 0 auto;
-    border: 0;
-    border-bottom: 2px solid #ff8b1a;
-    transition: border-color .3s ease-out;
-    background-color: transparent;
-    color: white;
-    font-size: 2.218em;
-    font-weight: lighter; }
-    .subscribe input:focus {
-      outline: none;
-      border-color: #ffa54d; }
-    .subscribe input:hover {
-      border-color: #ffa54d; }
-  .subscribe ::-webkit-input-placeholder {
-    color: white; }
-  .subscribe :-moz-placeholder {
-    /* Firefox 18- */
-    color: white; }
-  .subscribe ::-moz-placeholder {
-    /* Firefox 19+ */
-    color: white; }
-  .subscribe :-ms-input-placeholder {
-    color: white; }
-
 #map-canvas {
+  width: 100%;
+  height: 100%; }
+
+.map-container {
   width: 100%;
   height: 500px; }
 
