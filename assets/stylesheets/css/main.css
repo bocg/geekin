@@ -29,12 +29,14 @@ img {
   src: url("../../fonts/proximanova/light/proximanova-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/proximanova/light/proximanova-light-webfont.woff2") format("woff2"), url("../../fonts/proximanova/lighta/proximanova-light-webfont.woff") format("woff"), url("../../fonts/proximanova/light/proximanova-light-webfont.ttf") format("truetype"), url("../../fonts/proximanova/light/proximanova-light-webfont.svg#proxima_novalight") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'proxima_nova_rgbold';
   src: url("../../fonts/proximanova/bold/proximanova-bold-webfont.eot");
   src: url("../../fonts/proximanova/bold/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/proximanova/bold/proximanova-bold-webfont.woff2") format("woff2"), url("../../fonts/proximanova/bold/proximanova-bold-webfont.woff") format("woff"), url("../../fonts/proximanova/bold/proximanova-bold-webfont.ttf") format("truetype"), url("../../fonts/proximanova/bold/proximanova-bold-webfont.svg#proxima_nova_rgbold") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 body {
   font-size: 14px;
   color: #8E93A2;
@@ -73,7 +75,8 @@ a:hover {
   color: #FF7E00;
   padding-bottom: 3px;
   border-bottom: 1px solid rgba(255, 126, 0, 0.2);
-  transition: opacity .3s ease-out; }
+  -webkit-transition: opacity 0.3s ease-out;
+          transition: opacity 0.3s ease-out; }
   .orange-link:hover {
     color: #FF7E00;
     opacity: .8; }
@@ -137,7 +140,8 @@ nav {
         color: white;
         opacity: .5;
         letter-spacing: 4px;
-        transition: all .3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+                transition: all 0.3s ease-out;
         font-size: 1em; }
         .nav-center ul li a.active,
         .nav-right ul li a.active {
@@ -160,7 +164,8 @@ nav {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 100%;
   border: 4px solid rgba(255, 255, 255, 0.6);
-  transition: background-color .3s ease-out; }
+  -webkit-transition: background-color 0.3s ease-out;
+          transition: background-color 0.3s ease-out; }
   .play-button-wrapper:hover {
     background-color: rgba(0, 0, 0, 0.5);
     border-color: white; }
@@ -176,30 +181,42 @@ nav {
   height: 40px;
   z-index: 1001; }
   .menu-button-wrapper:hover .menu-button div:first-child {
-    transform: translateY(-5px); }
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px); }
   .menu-button-wrapper:hover .menu-button div:last-child {
-    transform: translateY(5px); }
+    -webkit-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+            transform: translateY(5px); }
   .menu-button-wrapper .menu-button.active div {
     background-color: white; }
   .menu-button-wrapper .menu-button.active div:first-child {
-    transform: rotate(45deg) translateY(5px) translateX(10px); }
+    -webkit-transform: rotate(45deg) translateY(5px) translateX(10px);
+        -ms-transform: rotate(45deg) translateY(5px) translateX(10px);
+            transform: rotate(45deg) translateY(5px) translateX(10px); }
   .menu-button-wrapper .menu-button.active div.middle {
     opacity: 0; }
   .menu-button-wrapper .menu-button.active div:last-child {
-    transform: rotate(-45deg) translateY(-5px) translateX(10px); }
+    -webkit-transform: rotate(-45deg) translateY(-5px) translateX(10px);
+        -ms-transform: rotate(-45deg) translateY(-5px) translateX(10px);
+            transform: rotate(-45deg) translateY(-5px) translateX(10px); }
 
 .menu-button.orange div {
   background-color: #FF7E00; }
+
 .menu-button div {
   top: 10px;
   right: 0px;
   position: absolute;
   width: 40px;
-  height: 3px;
+  height: 2px;
   background-color: white;
-  transition: all .3s ease-out; }
+  -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
+
 .menu-button div:first-child {
   top: 0px; }
+
 .menu-button div:last-child {
   top: 20px; }
 
@@ -273,7 +290,8 @@ header {
   border-radius: 4px;
   color: white;
   background-color: transparent;
-  transition: all .3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
   cursor: pointer; }
   .download-button:hover {
     background-color: rgba(0, 0, 0, 0.3);
@@ -329,7 +347,8 @@ footer {
     color: #07143A;
     opacity: .5; }
   footer i, footer a {
-    transition: all .3s ease-out; }
+    -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out; }
     footer i:hover, footer a:hover {
       opacity: 1; }
   footer p {
@@ -349,7 +368,8 @@ footer {
   min-width: 320px;
   text-align: center;
   border-radius: 40px;
-  transition: opacity .3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out;
+          transition: opacity 0.3s ease-out;
   font-size: 1.118em; }
   .btn-geekin:hover {
     color: inherit;
@@ -385,7 +405,8 @@ footer {
     color: white;
     background-color: transparent;
     text-transform: uppercase;
-    transition: opacity .3s ease-out;
+    -webkit-transition: opacity 0.3s ease-out;
+            transition: opacity 0.3s ease-out;
     outline: none;
     font-size: 1.218em; }
     .subscribe button.btn-subscribe:hover {
@@ -397,7 +418,8 @@ footer {
     margin-bottom: 30px;
     border: 0;
     border-bottom: 2px solid #ff8b1a;
-    transition: border-color .3s ease-out;
+    -webkit-transition: border-color 0.3s ease-out;
+            transition: border-color 0.3s ease-out;
     background-color: transparent;
     color: white;
     font-size: 2.218em;
@@ -441,7 +463,8 @@ footer {
         display: block;
         height: 100%;
         color: #B6BCCD;
-        transition: color .3s ease-out; }
+        -webkit-transition: color 0.3s ease-out;
+                transition: color 0.3s ease-out; }
         .social-bar ul li a:hover {
           color: #7984a4; }
       .social-bar ul li:last-child {
@@ -612,7 +635,6 @@ header.header-home .caption {
     width: 90%;
     max-width: 300px;
     text-align: center; }
-
   .nav-fullscreen {
     position: fixed;
     top: 0px;
@@ -621,9 +643,14 @@ header.header-home .caption {
     z-index: 1000;
     height: 100%;
     width: 100%;
-    transform-origin: top;
-    transform: translateY(-150%);
-    transition: all .5s ease-out; }
+    -webkit-transform-origin: top;
+        -ms-transform-origin: top;
+            transform-origin: top;
+    -webkit-transform: translateY(-150%);
+        -ms-transform: translateY(-150%);
+            transform: translateY(-150%);
+    -webkit-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out; }
     .nav-fullscreen .social-bar {
       margin-top: 30px;
       color: white;
@@ -653,19 +680,21 @@ header.header-home .caption {
       /* Chrome, Safari, Opera */
       animation-delay: 1s; }
     .nav-fullscreen.active {
-      transform: translateY(0%); }
+      -webkit-transform: translateY(0%);
+          -ms-transform: translateY(0%);
+              transform: translateY(0%); }
     .nav-fullscreen .nav-logo {
       margin-top: 90px;
       margin-bottom: 30px; }
     .nav-fullscreen ul {
       width: 70%;
       margin: 0 auto; }
-
   .nav-right {
     display: block; }
     .nav-right ul li {
       width: 100%;
       display: block; } }
+
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -688,6 +717,5 @@ header.header-home .caption {
   padding-right: 20px; }
 
 body {
-  transition: all .3s ease-out; }
-
-/*# sourceMappingURL=main.css.map */
+  -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
