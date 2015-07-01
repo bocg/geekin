@@ -1,5 +1,23 @@
 $(document).ready(function() {
 
+  // Handles opening and closing of menu
+  $('body').on('click', '.menu-button-wrapper', function(e){
+    $('.menu-button').toggleClass('active');
+    $('.nav-fullscreen').toggleClass('active');
+
+    var navItems = $('.nav-fullscreen ul').find('li');
+    for ( var i = 0 ; i < navItems.length ; i++ ) {
+        $(navItems[i]).toggleClass('animated');
+        $(navItems[i]).toggleClass('fadeIn');
+    }
+    
+  });
+
+  // Prevents selection if double clicked
+  $('body').on('dblClick', '.menu-button-wrapper', function(e){
+    e.preventDefault();
+  });
+
   $("#owl-carousel").owlCarousel({
 
       slideSpeed : 300,

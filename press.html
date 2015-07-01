@@ -7,6 +7,7 @@
   <!-- VENDOR STYLESS -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="bower_components/animate.css/animate.css">
 
   <!-- CUSTOM STYLES -->
   <link rel="stylesheet" href="assets/stylesheets/css/main.css">
@@ -23,13 +24,34 @@
           <img class="nav-logo" src="assets/img/Logo.png" alt="Geekin Radio">
         </a>
       </div>
-      <div class="nav-right">
+      <div class="nav-right hidden-xs hidden-sm">
         <ul>
           <li><a href="features.html">features</a></li>
           <li><a class="active" href="press.html">press</a></li>
           <li><a href="about.html">about us</a></li>
           <li><a href="https://medium.com/@geekin_radio" target="_blank">blog</a></li>
         </ul>
+      </div>
+      <div class="nav-right nav-fullscreen">
+        <img class="nav-logo visible-md-*" src="assets/img/Logo.png" alt="Geekin Radio">
+        <ul>
+          <li><a href="features.html">features</a></li>
+          <li><a class="active" href="press.html">press</a></li>
+          <li><a href="about.html">about us</a></li>
+          <li><a href="https://medium.com/@geekin_radio" target="_blank">blog</a></li>
+        </ul>
+        <ul class="social-bar">
+          <li><a href="https://www.facebook.com/pages/Geekin-Radio/1407212369544883" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/geekin_radio" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://instagram.com/geekin_radio" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="menu-button-wrapper noselect hidden-md">
+        <div class="menu-button">
+          <div class="top"> </div>
+          <div class="middle"> </div>
+          <div class="bottom"> </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -148,6 +170,7 @@
   </div>
 </footer>
 
-
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="assets/scripts/main.js"></script>
 </body>
 </html>

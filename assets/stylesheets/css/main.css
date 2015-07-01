@@ -171,6 +171,44 @@ nav {
     background-color: rgba(0, 0, 0, 0.5);
     border-color: white; }
 
+.menu-button-wrapper {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  margin-top: 35px;
+  width: 40px;
+  height: 40px;
+  z-index: 1001; }
+  .menu-button-wrapper:hover .menu-button div:first-child {
+    transform: translateY(-5px); }
+  .menu-button-wrapper:hover .menu-button div:last-child {
+    transform: translateY(5px); }
+  .menu-button-wrapper .menu-button.active div:first-child {
+    transform: rotate(45deg) translateY(5px) translateX(10px); }
+  .menu-button-wrapper .menu-button.active div.middle {
+    opacity: 0; }
+  .menu-button-wrapper .menu-button.active div:last-child {
+    transform: rotate(-45deg) translateY(-5px) translateX(10px); }
+
+.menu-button div {
+  top: 10px;
+  right: 0px;
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: white;
+  transition: all .3s ease-out; }
+.menu-button div:first-child {
+  top: 0px; }
+.menu-button div:last-child {
+  top: 20px; }
+
+.menu-button-text {
+  opacity: 1;
+  margin-right: 45px; }
+
 header {
   width: 100%;
   height: 700px;
@@ -564,5 +602,77 @@ header.header-home .caption {
 /* ---------------- */
 /*     Utilities    */
 /* ---------------- */
+.nav-fullscreen {
+  display: none; }
+
+@media screen and (max-width: 990px) {
+  .nav-left {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 300px;
+    text-align: center; }
+
+  .nav-fullscreen {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(7, 20, 58, 0.9);
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    transform-origin: top;
+    transform: translateY(-150%);
+    transition: all .5s ease-out; }
+    .nav-fullscreen .social-bar {
+      margin-top: 30px;
+      color: white;
+      background-color: transparent;
+      border: 0; }
+      .nav-fullscreen .social-bar li {
+        display: inline-block;
+        font-size: 2.618em;
+        width: 30%; }
+    .nav-fullscreen li {
+      margin-bottom: 10px;
+      font-size: 1.618em; }
+    .nav-fullscreen li:nth-child(1) {
+      -webkit-animation-delay: .25s;
+      /* Chrome, Safari, Opera */
+      animation-delay: .25s; }
+    .nav-fullscreen li:nth-child(2) {
+      -webkit-animation-delay: .5s;
+      /* Chrome, Safari, Opera */
+      animation-delay: .5s; }
+    .nav-fullscreen li:nth-child(3) {
+      -webkit-animation-delay: .75s;
+      /* Chrome, Safari, Opera */
+      animation-delay: .75s; }
+    .nav-fullscreen li:nth-child(4) {
+      -webkit-animation-delay: 1s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 1s; }
+    .nav-fullscreen.active {
+      transform: translateY(0%); }
+    .nav-fullscreen .nav-logo {
+      margin-top: 90px;
+      margin-bottom: 30px; }
+    .nav-fullscreen ul {
+      width: 70%;
+      margin: 0 auto; }
+
+  .nav-right {
+    display: block; }
+    .nav-right ul li {
+      width: 100%;
+      display: block; } }
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 /*# sourceMappingURL=main.css.map */
