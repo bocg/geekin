@@ -10,6 +10,13 @@
 
 
 /* ---------------- */
+/*       Modules    */
+/* ---------------- */
+@import 'buttons';             // Button styles
+@import 'subscribe-bar';       // Newsletter subscribe input
+@import 'social-bar';          // Social bar at footer
+
+/* ---------------- */
 /*   Page Specific  */
 /* ---------------- */
 @import 'home';

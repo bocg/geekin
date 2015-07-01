@@ -1,20 +1,17 @@
+header.header-home {
+  .caption {
+    max-width:800px;
+    width:75%;
+    margin-top: 0px;
+  }
+}
+
 .feature-heading {
   color: $purple-dark;
   letter-spacing: 4px;
   font-weight: 300;
   margin-bottom: 20px;
   font-size: 50px;
-}
-
-.feature-image-shadow-left {
-  -webkit-box-shadow: -5px 5px 30px -5px rgba(153,153,153,1);
-  -moz-box-shadow: -5px 5px 30px -5px rgba(153,153,153,1);
-  box-shadow: -5px 5px 30px -5px rgba(153,153,153,1);
-}
-.feature-image-shadow-right {
-  -webkit-box-shadow: 5px 5px 30px -5px rgba(153,153,153,1);
-  -moz-box-shadow: 5px 5px 30px -5px rgba(153,153,153,1);
-  box-shadow: 5px 5px 30px -5px rgba(153,153,153,1);
 }
 
 .feature-text {

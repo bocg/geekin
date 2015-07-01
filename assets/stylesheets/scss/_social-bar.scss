@@ -1,0 +1,34 @@
+.social-bar {
+  height:126px;
+  width:100%;
+  background-color: white;
+  border-bottom: $border-light-purple;
+  color: $purple-light;
+  ul {
+    height:100%;
+    padding:0px;
+    li {
+      font-size:2.218em;
+      height:100%;
+      float:left;
+      display:inline-block;
+      width:33%;
+      text-align: center;
+      border-right: $border-light-purple;
+      a {
+        padding:20px;
+        padding-top: 40px;
+        display: block;
+        height:100%;
+        color: $purple-light;
+        transition: color .3s ease-out;
+        &:hover {
+          color: darken($purple-light, 20%);
+        }
+      }
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+}
