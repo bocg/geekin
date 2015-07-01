@@ -165,6 +165,9 @@ header {
   background-size: cover;
   background-position: center; }
 
+.nav-center {
+  padding-top: 60px; }
+
 .caption {
   margin: 0 auto;
   margin-top: 140px;
@@ -230,7 +233,7 @@ header {
   width: 50%;
   margin: 0 auto;
   display: block;
-  margin-top: 140px; }
+  margin: 100px auto 70px; }
 
 .header-home {
   height: 800px; }
