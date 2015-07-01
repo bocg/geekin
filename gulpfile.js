@@ -107,7 +107,7 @@ var jshint = require('gulp-jshint'),
     gulp.task('dev', ['jslint', 'sass-dev', 'server-dev'], function() {
       gulp.watch('assets/stylesheets/scss/*.scss', ['sass-dev'])
       gulp.watch('assets/scripts/*.js', ['jslint', 'reload']);
-      gulp.watch('assetes/stylesheets/css/.css', ['reload']);
+      gulp.watch('assets/stylesheets/css/*.css', ['reload']);
       gulp.watch('*.html', ['reload']);
       return gutil.log('Gulp is running your development server ...watching Javascripts and SCSS for changes.');
     });
