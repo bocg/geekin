@@ -6,3 +6,24 @@
     -ms-user-select: none;
     user-select: none;
 }
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.blurred {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+.pll {
+  padding-left: 20px;
+}
+
+.prl {
+  padding-right: 20px;
+}
+
+body {
+  transition: all .3s ease-out;
+}
