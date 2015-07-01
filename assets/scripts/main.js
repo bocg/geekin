@@ -1,16 +1,40 @@
 $(document).ready(function() {
 
+  var $menuButton = $('.menu-button');
+
+  // In case page loads below header, show menu button
+  // as orange by default
+  if ( $(window).scrollTop() > 60 + $('header').height()) {
+    $menuButton.addClass('orange');
+  }
+
   // Handles opening and closing of menu
   $('body').on('click', '.menu-button-wrapper', function(e){
+
+    // Toggles all classes for full screen menu
     $('.menu-button').toggleClass('active');
     $('.nav-fullscreen').toggleClass('active');
+    $('body').toggleClass('no-scroll');
+    $('.page-content').toggleClass('blurred');
 
+    // ANIMATES NAV ITEMS - Delay set in CSS
     var navItems = $('.nav-fullscreen ul').find('li');
     for ( var i = 0 ; i < navItems.length ; i++ ) {
         $(navItems[i]).toggleClass('animated');
         $(navItems[i]).toggleClass('fadeIn');
     }
-    
+  });
+
+  // Changes color of menu button if scrolling past header
+  $(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    var headerOffset = $('header').height();
+    if ( scroll + 60 >=  headerOffset) {
+      $menuButton.addClass('orange');
+    }
+    else if ( scroll + 60 < headerOffset) {
+      $menuButton.removeClass('orange');
+    }
   });
 
   // Prevents selection if double clicked
@@ -18,13 +42,14 @@ $(document).ready(function() {
     e.preventDefault();
   });
 
-  $("#owl-carousel").owlCarousel({
-
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true
-
-  });
+  // Quotes slider
+  // $("#owl-carousel").owlCarousel({
+  //
+  //     slideSpeed : 300,
+  //     paginationSpeed : 400,
+  //     singleItem:true
+  //
+  // });
 
   var map;
   function initialize() {
