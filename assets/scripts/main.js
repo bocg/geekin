@@ -183,8 +183,8 @@ $(document).ready(function() {
 
     });
 
-    var contentString = '<div id="content">'+
-      '<h1 id="firstHeading" class="firstHeading">FIND GEEKIN</h1>'+
+    var contentString = '<div id="map-infowindow-content">'+
+      '<h2 id="firstHeading" class="firstHeading">FIND GEEKIN</h1>'+
       '<div id="mapMarkerWindow">'+
       '<p>647 B King Street,</p>'+
       '<p>Charleston, 29403 SC</p>'+
@@ -196,7 +196,7 @@ $(document).ready(function() {
       content: contentString,
       borderRadius: 30
   });
-  
+
   google.maps.event.addListener(marker, 'click', function() {
     infowindow.open(map,marker);
   });
