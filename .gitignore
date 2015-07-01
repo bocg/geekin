@@ -1,4 +1,6 @@
+node_modules
 bower_components
-.DS_Store
+no
+*/.DS_Store
 assets/.DS_Store
 assets/img/.DS_Store
