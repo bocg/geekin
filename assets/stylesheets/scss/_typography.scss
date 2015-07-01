@@ -36,6 +36,8 @@ body {
 }
 
 a {
+  &:active,
+  &:visited,
   &:hover {
     text-decoration: none;
   }
@@ -57,7 +59,7 @@ a {
 .section-header {
   font-weight:lighter;
   font-size:3em;
-  letter-spacing:6px;
+  letter-spacing:3px;
   margin-bottom:80px;
   color:$purple-dark;
   .section-subheader {

@@ -42,6 +42,8 @@ body {
   color: #8E93A2;
   font-family: "proxima_nova_light", "Helvetica", "Arial", sans-serif; }
 
+a:active,
+a:visited,
 a:hover {
   text-decoration: none; }
 
@@ -58,7 +60,7 @@ a:hover {
 .section-header {
   font-weight: lighter;
   font-size: 3em;
-  letter-spacing: 6px;
+  letter-spacing: 3px;
   margin-bottom: 80px;
   color: #07143A; }
   .section-header .section-subheader {
@@ -231,12 +233,9 @@ header {
   background-size: cover;
   background-position: center; }
 
-.nav-center {
-  padding-top: 60px; }
-
 .caption {
   margin: 0 auto;
-  margin-top: 140px;
+  margin-top: 100px;
   text-align: center;
   max-width: 550px;
   width: 50%;
@@ -245,7 +244,7 @@ header {
   .caption h1 {
     font-weight: lighter;
     font-size: 3.618em;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     margin-bottom: 20px; }
   .caption p {
     font-size: 1.218em;
@@ -333,8 +332,7 @@ footer {
   footer i.fa {
     font-size: 2.218em;
     text-align: center;
-    float: left;
-    width: 46%;
+    width: 50%;
     cursor: pointer;
     padding: 15px;
     padding-left: 25px;
@@ -368,8 +366,8 @@ footer {
   min-width: 320px;
   text-align: center;
   border-radius: 40px;
-  -webkit-transition: opacity 0.3s ease-out;
-          transition: opacity 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
   font-size: 1.118em; }
   .btn-geekin:hover {
     color: inherit;
@@ -423,22 +421,27 @@ footer {
     background-color: transparent;
     color: white;
     font-size: 2.218em;
-    font-weight: lighter; }
+    font-weight: lighter;
+    font-family: "proxima_nova_light", "Helvetica", "Arial", sans-serif; }
     .subscribe input:focus {
       outline: none;
       border-color: #ffa54d; }
     .subscribe input:hover {
       border-color: #ffa54d; }
   .subscribe ::-webkit-input-placeholder {
-    color: white; }
+    color: white;
+    font-family: "proxima_nova_light", "Helvetica", "Arial", sans-serif; }
   .subscribe :-moz-placeholder {
     /* Firefox 18- */
-    color: white; }
+    color: white;
+    font-family: "proxima_nova_light", "Helvetica", "Arial", sans-serif; }
   .subscribe ::-moz-placeholder {
     /* Firefox 19+ */
-    color: white; }
+    color: white;
+    font-family: "proxima_nova_light", "Helvetica", "Arial", sans-serif; }
   .subscribe :-ms-input-placeholder {
-    color: white; }
+    color: white;
+    font-family: "proxima_nova_light", "Helvetica", "Arial", sans-serif; }
 
 .social-bar {
   height: 126px;
@@ -571,7 +574,7 @@ header.header-home .caption {
   border-color: transparent; }
   .section-blog h2.section-header {
     color: white;
-    margin-bottom: 50px; }
+    margin-bottom: 30px; }
     .section-blog h2.section-header p {
       color: white; }
 
@@ -607,6 +610,9 @@ header.header-home .caption {
 .caption-button-wrapper a:first-child.btn-geekin {
   margin-right: 20px; }
 
+.press-image {
+  margin-bottom: 40px; }
+
 #map-canvas {
   width: 100%;
   height: 100%; }
@@ -628,6 +634,30 @@ header.header-home .caption {
   display: none; }
 
 @media screen and (max-width: 990px) {
+  .section p {
+    line-height: 1.6;
+    margin-bottom: 20px; }
+  footer {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    footer [class^=col] {
+      text-align: center;
+      margin-bottom: 20px; }
+      footer [class^=col] h4 {
+        text-align: left; }
+      footer [class^=col] ul {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 300px;
+        text-align: left; }
+    footer .download-buttons {
+      text-align: center; }
+    footer .col-download-links {
+      text-align: center; }
+      footer .col-download-links h4 {
+        text-align: center; }
+  .caption-button-wrapper a:first-child.btn-geekin {
+    margin-right: 0; }
   .nav-left {
     display: block;
     float: none;
@@ -639,7 +669,7 @@ header.header-home .caption {
     position: fixed;
     top: 0px;
     left: 0px;
-    background-color: rgba(7, 20, 58, 0.95);
+    background-color: rgba(255, 126, 0, 0.8);
     z-index: 1000;
     height: 100%;
     width: 100%;

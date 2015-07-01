@@ -35,6 +35,7 @@
     color:white;
     font-size: 2.218em;
     font-weight: lighter;
+    font-family: $body-font-light;
     &:focus {
       outline:none;
       border-color: lighten($orange, 15%);
@@ -45,17 +46,21 @@
   }
   ::-webkit-input-placeholder {
      color: white;
+     font-family: $body-font-light;
   }
 
   :-moz-placeholder { /* Firefox 18- */
      color: white;
+     font-family: $body-font-light;
   }
 
   ::-moz-placeholder {  /* Firefox 19+ */
      color: white;
+     font-family: $body-font-light;
   }
 
   :-ms-input-placeholder {
      color: white;
+     font-family: $body-font-light;
   }
 }
