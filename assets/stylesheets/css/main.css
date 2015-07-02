@@ -37,10 +37,19 @@ img {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url("../../fonts/proximanova/regular/proximanova-regular-webfont.eot");
+  src: url("../../fonts/proximanova/regular/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/proximanova/regular/proximanova-regular-webfont.woff2") format("woff2"), url("../../fonts/proximanova/regular/proximanova-regular-webfont.woff") format("woff"), url("../../fonts/proximanova/regular/proximanova-regular-webfont.ttf") format("truetype"), url("../../fonts/proximanova/regular/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   font-size: 14px;
   color: #8E93A2;
-  font-family: "proxima_nova_light", "Helvetica", "Arial", sans-serif; }
+  font-family: "proxima_nova_rgregular", "Helvetica", "Arial", sans-serif; }
 
 a:active,
 a:visited,
@@ -211,7 +220,8 @@ nav {
   right: 0px;
   position: absolute;
   width: 40px;
-  height: 2px;
+  height: 4px;
+  border-radius: 40px;
   background-color: white;
   -webkit-transition: all 0.3s ease-out;
           transition: all 0.3s ease-out; }
@@ -240,7 +250,7 @@ header {
   max-width: 550px;
   width: 50%;
   color: white;
-  margin-bottom: 60px; }
+  margin-bottom: 30px; }
   .caption h1 {
     font-weight: lighter;
     font-size: 3.618em;
@@ -339,8 +349,6 @@ footer {
     padding-right: 25px;
     border: 1px solid #e3e6ec;
     border-radius: 8px; }
-    footer i.fa:first-child {
-      margin-right: 8%; }
   footer i, footer p, footer a {
     color: #07143A;
     opacity: .5; }
@@ -374,7 +382,7 @@ footer {
     opacity: .7; }
 
 .btn-geekin-dark {
-  background-color: rgba(0, 0, 0, 0.35); }
+  background-color: rgba(0, 0, 0, 0.6); }
 
 .btn-geekin-orange {
   background-color: #FF7E00; }
@@ -637,6 +645,8 @@ header.header-home .caption {
   .section p {
     line-height: 1.6;
     margin-bottom: 20px; }
+  .caption-button-wrapper .btn-geekin {
+    margin-bottom: 20px; }
   footer {
     padding-top: 40px;
     padding-bottom: 40px; }
@@ -656,6 +666,9 @@ header.header-home .caption {
       text-align: center; }
       footer .col-download-links h4 {
         text-align: center; }
+  .section-blog {
+    height: 320px;
+    padding-top: 30px; }
   .caption-button-wrapper a:first-child.btn-geekin {
     margin-right: 0; }
   .nav-left {
