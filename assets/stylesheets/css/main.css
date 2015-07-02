@@ -37,11 +37,22 @@ img {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url("../../fonts/proximanova/regular/proximanova-regular-webfont.eot");
+  src: url("../../fonts/proximanova/regular/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/proximanova/regular/proximanova-regular-webfont.woff2") format("woff2"), url("../../fonts/proximanova/regular/proximanova-regular-webfont.woff") format("woff"), url("../../fonts/proximanova/regular/proximanova-regular-webfont.ttf") format("truetype"), url("../../fonts/proximanova/regular/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   font-size: 14px;
   color: #8E93A2;
-  font-family: "proxima_nova_light", "Helvetica", "Arial", sans-serif; }
+  font-family: "proxima_nova_rgregular", "Helvetica", "Arial", sans-serif; }
 
+a:active,
+a:visited,
 a:hover {
   text-decoration: none; }
 
@@ -58,7 +69,7 @@ a:hover {
 .section-header {
   font-weight: lighter;
   font-size: 3em;
-  letter-spacing: 6px;
+  letter-spacing: 3px;
   margin-bottom: 80px;
   color: #07143A; }
   .section-header .section-subheader {
@@ -209,7 +220,8 @@ nav {
   right: 0px;
   position: absolute;
   width: 40px;
-  height: 2px;
+  height: 4px;
+  border-radius: 40px;
   background-color: white;
   -webkit-transition: all 0.3s ease-out;
           transition: all 0.3s ease-out; }
@@ -231,21 +243,18 @@ header {
   background-size: cover;
   background-position: center; }
 
-.nav-center {
-  padding-top: 60px; }
-
 .caption {
   margin: 0 auto;
-  margin-top: 140px;
+  margin-top: 100px;
+  margin-bottom: 30px;
   text-align: center;
   max-width: 550px;
   width: 50%;
-  color: white;
-  margin-bottom: 60px; }
+  color: white; }
   .caption h1 {
     font-weight: lighter;
     font-size: 3.618em;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     margin-bottom: 20px; }
   .caption p {
     font-size: 1.218em;
@@ -333,16 +342,13 @@ footer {
   footer i.fa {
     font-size: 2.218em;
     text-align: center;
-    float: left;
-    width: 46%;
+    width: 50%;
     cursor: pointer;
     padding: 15px;
     padding-left: 25px;
     padding-right: 25px;
     border: 1px solid #e3e6ec;
     border-radius: 8px; }
-    footer i.fa:first-child {
-      margin-right: 8%; }
   footer i, footer p, footer a {
     color: #07143A;
     opacity: .5; }
@@ -368,15 +374,15 @@ footer {
   min-width: 320px;
   text-align: center;
   border-radius: 40px;
-  -webkit-transition: opacity 0.3s ease-out;
-          transition: opacity 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
   font-size: 1.118em; }
   .btn-geekin:hover {
     color: inherit;
     opacity: .7; }
 
 .btn-geekin-dark {
-  background-color: rgba(0, 0, 0, 0.35); }
+  background-color: rgba(0, 0, 0, 0.6); }
 
 .btn-geekin-orange {
   background-color: #FF7E00; }
@@ -397,9 +403,11 @@ footer {
   padding-top: 60px; }
   .subscribe button.btn-subscribe {
     font-family: "proxima_nova_rgbold", "Helvetica", "Arial", sans-serif;
-    margin-top: 10px;
-    border: 0;
-    width: 100%;
+    margin-top: 22px;
+    min-width: 220px;
+    margin-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
     letter-spacing: 4px;
     color: white;
@@ -423,22 +431,27 @@ footer {
     background-color: transparent;
     color: white;
     font-size: 2.218em;
-    font-weight: lighter; }
+    font-weight: lighter;
+    font-family: "proxima_nova_light", "Helvetica", "Arial", sans-serif; }
     .subscribe input:focus {
       outline: none;
       border-color: #ffa54d; }
     .subscribe input:hover {
       border-color: #ffa54d; }
   .subscribe ::-webkit-input-placeholder {
-    color: white; }
+    color: white;
+    font-family: "proxima_nova_light", "Helvetica", "Arial", sans-serif; }
   .subscribe :-moz-placeholder {
     /* Firefox 18- */
-    color: white; }
+    color: white;
+    font-family: "proxima_nova_light", "Helvetica", "Arial", sans-serif; }
   .subscribe ::-moz-placeholder {
     /* Firefox 19+ */
-    color: white; }
+    color: white;
+    font-family: "proxima_nova_light", "Helvetica", "Arial", sans-serif; }
   .subscribe :-ms-input-placeholder {
-    color: white; }
+    color: white;
+    font-family: "proxima_nova_light", "Helvetica", "Arial", sans-serif; }
 
 .social-bar {
   height: 126px;
@@ -571,7 +584,7 @@ header.header-home .caption {
   border-color: transparent; }
   .section-blog h2.section-header {
     color: white;
-    margin-bottom: 50px; }
+    margin-bottom: 30px; }
     .section-blog h2.section-header p {
       color: white; }
 
@@ -607,6 +620,9 @@ header.header-home .caption {
 .caption-button-wrapper a:first-child.btn-geekin {
   margin-right: 20px; }
 
+.press-image {
+  margin-bottom: 40px; }
+
 #map-canvas {
   width: 100%;
   height: 100%; }
@@ -628,6 +644,35 @@ header.header-home .caption {
   display: none; }
 
 @media screen and (max-width: 990px) {
+  .section p {
+    line-height: 1.6;
+    margin-bottom: 20px; }
+  .caption-button-wrapper .btn-geekin {
+    margin-bottom: 20px; }
+  footer {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    footer [class^=col] {
+      text-align: center;
+      margin-bottom: 20px; }
+      footer [class^=col] h4 {
+        text-align: left; }
+      footer [class^=col] ul {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 300px;
+        text-align: left; }
+    footer .download-buttons {
+      text-align: center; }
+    footer .col-download-links {
+      text-align: center; }
+      footer .col-download-links h4 {
+        text-align: center; }
+  .section-blog {
+    height: 320px;
+    padding-top: 30px; }
+  .caption-button-wrapper a:first-child.btn-geekin {
+    margin-right: 0; }
   .nav-left {
     display: block;
     float: none;
@@ -639,7 +684,7 @@ header.header-home .caption {
     position: fixed;
     top: 0px;
     left: 0px;
-    background-color: rgba(7, 20, 58, 0.95);
+    background-color: rgba(255, 126, 0, 0.8);
     z-index: 1000;
     height: 100%;
     width: 100%;
@@ -694,6 +739,25 @@ header.header-home .caption {
     .nav-right ul li {
       width: 100%;
       display: block; } }
+
+@media screen and (max-width: 776px) {
+  body {
+    font-size: 14px; }
+  .section-header .section-subheader {
+    font-size: .5em; }
+  .btn-geekin-blog {
+    width: 100%; }
+  .section-header {
+    font-size: 2.318em; }
+  .subscribe .subscribe-input {
+    text-align: center; }
+  .subscribe input {
+    width: 80%; }
+  .subscribe button.btn-subscribe {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 60px; } }
 
 .noselect {
   -webkit-touch-callout: none;

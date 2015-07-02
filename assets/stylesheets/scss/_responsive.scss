@@ -3,6 +3,54 @@
 }
 
 @media screen and (max-width:990px){
+  .section p {
+    line-height:1.6;
+    margin-bottom: 20px;
+  }
+
+  .caption-button-wrapper {
+    .btn-geekin {
+      margin-bottom:20px;
+    }
+  }
+
+  footer {
+    padding-top: 40px;
+    padding-bottom:40px;
+    [class^=col] {
+      text-align: center;
+      margin-bottom:20px;
+      h4 {
+        text-align: left;
+      }
+      ul {
+        margin-left: auto;
+        margin-right:auto;
+        max-width:300px;
+        text-align: left;
+      }
+    }
+    .download-buttons {
+      text-align: center;
+    }
+    .col-download-links {
+      h4 {
+        text-align: center;
+      }
+      text-align: center;
+    }
+  }
+
+  .section-blog {
+    height: 320px;
+    padding-top:30px;
+  }
+
+  .caption-button-wrapper {
+    a:first-child.btn-geekin {
+      margin-right: 0;
+    }
+  }
   .nav-left {
     display:block;
     float:none;
@@ -15,7 +63,7 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    background-color: rgba($purple-dark, .95);
+    background-color: rgba($orange, .8);
     z-index:1000;
     height: 100%;
     width:100%;
@@ -74,4 +122,33 @@
       }
     }
   }
-};
+}
+
+@media screen and (max-width:776px){
+  body {
+    font-size: 14px;
+  }
+  .section-header .section-subheader {
+    font-size:.5em;
+  }
+  .btn-geekin-blog {
+    width:100%;
+  }
+  .section-header {
+    font-size:2.318em;
+  }
+  .subscribe {
+    .subscribe-input {
+      text-align: center;
+    }
+    input {
+      width:80%;
+    }
+    button.btn-subscribe {
+      display: block;
+      width:80%;
+      margin: 0 auto;
+      margin-bottom:60px;
+    }
+  }
+}

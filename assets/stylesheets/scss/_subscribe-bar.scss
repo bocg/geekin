@@ -7,9 +7,11 @@
 
   button.btn-subscribe {
     font-family:$body-font-bold;
-    margin-top:10px;
-    border:0;
-    width:100%;
+    margin-top:22px;
+    min-width:220px;
+    margin-bottom:60px;
+    padding-left:20px;
+    padding-right:20px;
     text-align: center;
     letter-spacing: 4px;
     color:white;
@@ -35,6 +37,7 @@
     color:white;
     font-size: 2.218em;
     font-weight: lighter;
+    font-family: $body-font-light;
     &:focus {
       outline:none;
       border-color: lighten($orange, 15%);
@@ -45,17 +48,21 @@
   }
   ::-webkit-input-placeholder {
      color: white;
+     font-family: $body-font-light;
   }
 
   :-moz-placeholder { /* Firefox 18- */
      color: white;
+     font-family: $body-font-light;
   }
 
   ::-moz-placeholder {  /* Firefox 19+ */
      color: white;
+     font-family: $body-font-light;
   }
 
   :-ms-input-placeholder {
      color: white;
+     font-family: $body-font-light;
   }
 }
