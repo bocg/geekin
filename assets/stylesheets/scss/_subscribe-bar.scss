@@ -7,9 +7,11 @@
 
   button.btn-subscribe {
     font-family:$body-font-bold;
-    margin-top:10px;
-    border:0;
-    width:100%;
+    margin-top:22px;
+    min-width:220px;
+    margin-bottom:60px;
+    padding-left:20px;
+    padding-right:20px;
     text-align: center;
     letter-spacing: 4px;
     color:white;

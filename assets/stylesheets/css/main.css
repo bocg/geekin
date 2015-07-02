@@ -246,11 +246,11 @@ header {
 .caption {
   margin: 0 auto;
   margin-top: 100px;
+  margin-bottom: 30px;
   text-align: center;
   max-width: 550px;
   width: 50%;
-  color: white;
-  margin-bottom: 30px; }
+  color: white; }
   .caption h1 {
     font-weight: lighter;
     font-size: 3.618em;
@@ -403,9 +403,11 @@ footer {
   padding-top: 60px; }
   .subscribe button.btn-subscribe {
     font-family: "proxima_nova_rgbold", "Helvetica", "Arial", sans-serif;
-    margin-top: 10px;
-    border: 0;
-    width: 100%;
+    margin-top: 22px;
+    min-width: 220px;
+    margin-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
     letter-spacing: 4px;
     color: white;
@@ -737,6 +739,25 @@ header.header-home .caption {
     .nav-right ul li {
       width: 100%;
       display: block; } }
+
+@media screen and (max-width: 776px) {
+  body {
+    font-size: 14px; }
+  .section-header .section-subheader {
+    font-size: .5em; }
+  .btn-geekin-blog {
+    width: 100%; }
+  .section-header {
+    font-size: 2.318em; }
+  .subscribe .subscribe-input {
+    text-align: center; }
+  .subscribe input {
+    width: 80%; }
+  .subscribe button.btn-subscribe {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 60px; } }
 
 .noselect {
   -webkit-touch-callout: none;

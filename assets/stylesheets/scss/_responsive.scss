@@ -124,6 +124,31 @@
   }
 }
 
-@media screen and (max-width:760px){
-
+@media screen and (max-width:776px){
+  body {
+    font-size: 14px;
+  }
+  .section-header .section-subheader {
+    font-size:.5em;
+  }
+  .btn-geekin-blog {
+    width:100%;
+  }
+  .section-header {
+    font-size:2.318em;
+  }
+  .subscribe {
+    .subscribe-input {
+      text-align: center;
+    }
+    input {
+      width:80%;
+    }
+    button.btn-subscribe {
+      display: block;
+      width:80%;
+      margin: 0 auto;
+      margin-bottom:60px;
+    }
+  }
 }
