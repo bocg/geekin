@@ -11,7 +11,7 @@
 
   <!-- CUSTOM STYLES -->
   <link rel="stylesheet" href="assets/stylesheets/css/main.css">
-  <title>Geekin Radio - Index</title>
+  <title>Geekin Radio | Features</title>
 
 </head>
 
@@ -19,7 +19,7 @@
 
   <!-- MOBILE MENU -->
   <div class="nav-right nav-fullscreen">
-    <img class="nav-logo visible-md-*" src="assets/img/Logo.png" alt="Geekin Radio">
+    <a href="index.html"><img class="nav-logo visible-md-*" src="assets/img/Logo.png" alt="Geekin Radio"></a>
     <ul>
       <li><a class="active" href="features.html">features</a></li>
       <li><a href="press.html">press</a></li>
@@ -53,8 +53,8 @@
           </div>
           <div class="nav-right hidden-xs hidden-sm">
             <ul>
-              <li><a href="features.html">features</a></li>
-              <li><a class="active" href="press.html">press</a></li>
+              <li><a class="active" href="features.html">features</a></li>
+              <li><a href="press.html">press</a></li>
               <li><a href="about.html">about us</a></li>
               <li><a href="https://medium.com/@geekin_radio" target="_blank">blog</a></li>
             </ul>
@@ -78,7 +78,7 @@
             <h3 class="feature-heading">Connect with<br>people</h3>
             <p>Connect with icons, friends & followers and listen together in a shared streaming experience.</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 feature-image ">
             <img class="feature-image-shadow-left" src="assets/img/connect-screenshot.png" alt="Screenshot of Geekin Radio">
           </div>
         </div>
@@ -89,7 +89,7 @@
     <div class="section">
       <div class="inner-container">
         <div class="row row-feature">
-          <div class="col-md-4 col-md-offset-1">
+          <div class="col-md-4 col-md-offset-1 feature-image ">
               <img class="feature-image-shadow-right" src="assets/img/broadcast-screenshot.png" alt="Screenshot of Geekin Radio">
           </div>
           <div class="col-md-6 feature-text">
@@ -109,7 +109,7 @@
             <h3 class="feature-heading">Discover great<br>music</h3>
             <p>Discover new music while listening in to other broadcaster - real time.</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 feature-image">
             <img class="feature-image-shadow-left" src="assets/img/discover-screenshot.png" alt="Screenshot of Geekin Radio">
           </div>
         </div>
@@ -121,7 +121,7 @@
       <div class="inner-container">
         <div class="row row-feature">
           <div class="col-md-4 col-md-offset-1">
-              <img class="feature-image-shadow-right" src="assets/img/broadcast-screenshot.png" alt="Screenshot of Geekin Radio">
+              <img class="feature-image feature-image-shadow-right" src="assets/img/broadcast-screenshot.png" alt="Screenshot of Geekin Radio">
           </div>
           <div class="col-md-6 feature-text">
             <h3 class="feature-heading">Broadcast and<br>get popular</h3>
@@ -169,7 +169,7 @@
           <p class="section-subheader">Make sure you checkout our blog for latest news and updates.</p>
         </h2>
         <div class="btn-wrapper-center">
-          <a href="#" class="btn-geekin btn-geekin-white">take me to the blog</a>
+          <a href="https://medium.com/@geekin_radio" class="btn-geekin btn-geekin-white btn-geekin-blog" target="_blank">take me to the blog</a>
         </div>
       </div>
     </div>
@@ -178,11 +178,11 @@
     <div class="subscribe">
       <div class="container">
         <div class="row">
-          <div class="col-sm-7 col-sm-offset-1">
+          <div class="col-sm-7 col-sm-offset-1 subscribe-input">
             <input type="text" placeholder="Enter email address">
           </div>
           <div class="col-sm-3">
-            <button class="btn-subscribe">Subscribe</button>
+            <button class="btn-geekin btn-geekin-white btn-subscribe">Subscribe</button>
           </div>
         </div>
       </div>
@@ -206,7 +206,7 @@
           </div>
           <div class="col-md-5 col-links">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 col-xs-4 col-xs-offset-2">
                 <h4>company</h4>
                 <ul>
                   <li><a href="">About Us</a></li>
@@ -215,7 +215,7 @@
                   <li><a href="">Press</a></li>
                 </ul>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-offest-2 col-xs-4 col-xs-offset-1">
                 <h4>support</h4>
                 <ul>
                   <li><a href="">Contact Us</a></li>
@@ -226,10 +226,10 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-download-links">
+          <div class="col-md-3 col-download-links col-xs-10 col-xs-offset-1 center">
             <h4>Download the app</h4>
             <p>Commodo mass adipiscing di cum lorem ipsum est.</p>
-            <div class="download-buttons">
+            <div class="download-buttons clearfix">
               <i class="fa fa-apple"></i>
             </div>
           </div>
@@ -240,10 +240,11 @@
 
 <!-- VENDOR SCRIPTS -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="owl.carousel/owl-carousel/owl.carousel.js"></script>
+<script src="bower_components/instantclick/instantclick.js"></script>
 
 <!-- CUSTOM SCRIPTS -->
 <script src="assets/scripts/main.js"></script>
+<script src="assets/scripts/menu.js"></script>
 
 </body>
 
