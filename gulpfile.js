@@ -15,7 +15,7 @@ var jshint = require('gulp-jshint'),
     imagemin = require('gulp-imagemin'),
     autoprefixer = require('gulp-autoprefixer'),
     minifyHtml = require('gulp-minify-html'),
-    del = require('del'),
+    // del = require('del'),
     concatVendor = require('gulp-concat-vendor'),
     browsersync = require('browser-sync').create();
 
@@ -24,23 +24,26 @@ var jshint = require('gulp-jshint'),
     gulp.task('jslint', function() {
         return gulp.src('assets/scripts/*.js')
             .pipe(jshint())
-            .pipe(jshint.reporter('jshint-stylish'));
+            .pipe(jshint.reporter('jshint-stylish'))
     });
 
     // Compile Our Sass for development (NOT VENDOR)
     gulp.task('sass-dev', function() {
         return gulp.src('assets/stylesheets/scss/*.scss')
-            .pipe(sass())
+            .pipe(sass({ errLogToConsole: true }).on('error', sass.logError))
             .pipe(autoprefixer({
               browser: ['last 2 versions'],
             }))
-            .pipe(gulp.dest('assets/stylesheets/css'));           //Default file name is style.css
+            .pipe(gulp.dest('assets/stylesheets/css'))           //Default file name is style.css
     });
 
     // Sass build task
     gulp.task('sass-build', function() {
         return gulp.src('assets/stylesheets/scss/*.scss')
-          .pipe(sass())
+          .pipe(autoprefixer({
+            browser: ['last 2 versions'],
+          }))
+          .pipe(sass({ errLogToConsole: true }))
           .pipe(gulp.dest('dist/assets/css'))
           .pipe(cssmin())
           .pipe(rename({ suffix: '.min' }))
@@ -74,7 +77,8 @@ var jshint = require('gulp-jshint'),
 
     // Vendor Script Concat
     gulp.task('vendorcss', function() {
-        return gulp.src(['bower_components/animate.css/animate.css',
+        return gulp.src([
+          'bower_components/animate.css/animate.css',
           'bower_components/font-awesome/css/font-awesome.css',
           'bower_components/bootstrap/dist/css/bootstrap.css']
         )
