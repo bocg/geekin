@@ -10,9 +10,14 @@ $(document).ready(function() {
   // });
   'use strict';
 
+  // Caching jQuery Variables for optimization
   var $menuButton = $('.menu-button');
   var $fullScreenMenu = $('.nav-fullscreen');
   var $body = $('body');
+  var headerOffset = $('header').height();
+  var subscribeBarOffest = $('div.subscribe').offset().top;
+  var navItems = $('.nav-fullscreen ul').find('li');
+
 
   // In case page loads below header, show menu button
   // as orange by default
@@ -30,7 +35,6 @@ $(document).ready(function() {
     $('.page-content').toggleClass('blurred');
 
     // ANIMATES NAV ITEMS - Delay set in CSS
-    var navItems = $('.nav-fullscreen ul').find('li');
     for ( var i = 0 ; i < navItems.length ; i++ ) {
       $(navItems[i]).toggleClass('animated');
       $(navItems[i]).toggleClass('fadeIn');
@@ -41,11 +45,11 @@ $(document).ready(function() {
   $(window).scroll(function (e) {
     e.preventDefault();
     var scroll = $(window).scrollTop();
-    var headerOffset = $('header').height();
+    console.log(subscribeBarOffest);
     if ( scroll + 60 >=  headerOffset) {
       $menuButton.addClass('orange');
     }
-    else if ( scroll + 60 < headerOffset) {
+    else if ( scroll + 60 < headerOffset ) {
       $menuButton.removeClass('orange');
     }
   });

@@ -74,7 +74,7 @@ a:hover {
   color: #07143A; }
   .section-header .section-subheader {
     margin-top: 14px;
-    font-size: .268em;
+    font-size: .318em;
     letter-spacing: 1px;
     font-weight: normal;
     color: #8992ae; }
@@ -239,7 +239,7 @@ nav {
 header {
   width: 100%;
   height: 700px;
-  background-image: url("../../img/Background.png");
+  background-image: url("../../img/Background-half.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -704,7 +704,7 @@ header.header-home .caption {
       .nav-fullscreen .social-bar li {
         display: inline-block;
         font-size: 2.618em;
-        width: 30%; }
+        width: 20%; }
     .nav-fullscreen li {
       margin-bottom: 10px;
       font-size: 1.618em; }
@@ -743,12 +743,30 @@ header.header-home .caption {
 @media screen and (max-width: 776px) {
   body {
     font-size: 14px; }
+  .article-snippet {
+    width: 90%; }
+    .article-snippet span.date {
+      display: block; }
+  .inner-container {
+    width: 88%; }
+  .caption {
+    width: 80%;
+    margin-top: 60px; }
+  .menu-button-wrapper {
+    top: -10px;
+    right: 30px; }
+  .btn-geekin {
+    min-width: 240px; }
+  .col-press-image {
+    text-align: center; }
   .section-header .section-subheader {
-    font-size: .5em; }
+    font-size: .5em;
+    line-height: 1.2; }
   .btn-geekin-blog {
     width: 100%; }
   .section-header {
-    font-size: 2.318em; }
+    font-size: 2.318em;
+    margin-bottom: 60px; }
   .subscribe .subscribe-input {
     text-align: center; }
   .subscribe input {
