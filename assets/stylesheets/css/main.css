@@ -74,7 +74,7 @@ a:hover {
   color: #07143A; }
   .section-header .section-subheader {
     margin-top: 14px;
-    font-size: .268em;
+    font-size: .318em;
     letter-spacing: 1px;
     font-weight: normal;
     color: #8992ae; }
@@ -704,7 +704,7 @@ header.header-home .caption {
       .nav-fullscreen .social-bar li {
         display: inline-block;
         font-size: 2.618em;
-        width: 30%; }
+        width: 20%; }
     .nav-fullscreen li {
       margin-bottom: 10px;
       font-size: 1.618em; }
