@@ -128,22 +128,59 @@
   body {
     font-size: 14px;
   }
+
+  .article-snippet {
+    width: 90%;
+    span.date {
+      display: block;
+    }
+  }
+
+  .inner-container {
+    width:88%;
+  }
+
+  .caption {
+    width:80%;
+    margin-top:60px;
+  }
+
+  .menu-button-wrapper {
+    top:-10px;
+    right:30px;
+  }
+
+  .btn-geekin {
+    min-width:240px;
+  }
+
+  .col-press-image {
+    text-align: center;
+  }
+
   .section-header .section-subheader {
     font-size:.5em;
+    line-height: 1.2;
   }
+
   .btn-geekin-blog {
     width:100%;
   }
+
   .section-header {
     font-size:2.318em;
+    margin-bottom:60px;
   }
+
   .subscribe {
     .subscribe-input {
       text-align: center;
     }
+
     input {
       width:80%;
     }
+    
     button.btn-subscribe {
       display: block;
       width:80%;
