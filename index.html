@@ -17,10 +17,36 @@
 
 <body>
 
+  <!-- MOBILE MENU -->
+  <div class="nav-right nav-fullscreen">
+    <a href="index.html"><img class="nav-logo visible-md-*" src="assets/img/Logo.png" alt="Geekin Radio"></a>
+    <ul>
+      <li><a href="features.html">features</a></li>
+      <li><a href="press.html">press</a></li>
+      <li><a href="about.html">about us</a></li>
+      <li><a href="https://medium.com/@geekin_radio" target="_blank">blog</a></li>
+    </ul>
+    <ul class="social-bar">
+      <li><a href="https://www.facebook.com/pages/Geekin-Radio/1407212369544883" target="_blank"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://twitter.com/geekin_radio" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://instagram.com/geekin_radio" target="_blank"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+  </div>
+  <div class="menu-button-wrapper noselect hidden-md hidden-lg hidden-xl">
+    <div class="menu-button">
+      <div class="top"> </div>
+      <div class="middle"> </div>
+      <div class="bottom"> </div>
+    </div>
+  </div>
+
+  <!-- PAGE CONTENT WRAPPER -->
+  <div class="page-content">
+
   <header class="header-home">
     <nav>
       <div class="container clearfix">
-        <div class="nav-center">
+        <div class="nav-center hidden-sm hidden-xs">
           <ul>
             <li><a href="features.html">features</a></li>
             <li><a href="press.html">press</a></li>
@@ -33,9 +59,11 @@
     <div class="header-logo">
       <img src="assets/img/Logo.png" alt="Geekin Radio Logo - white">
     </div>
-   <!-- <div class="play-button-wrapper">
-          <i class="fa fa-play"></i>
-        </div> -->
+     <!--
+     <div class="play-button-wrapper">
+        <i class="fa fa-play"></i>
+      </div>
+      -->
     <div class="caption">
       <h1>The world listening together</h1>
     </div>
@@ -43,8 +71,6 @@
       <a href="https://itunes.apple.com/us/app/geekin-radio-social-listening/id976185441?ls=1&mt=8" target="itunes_store" style="display:inline-block;overflow:hidden;background-size:cover;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.png) no-repeat;width:135px;height:40px;@media only screen{background-image:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg);}"></a>
     </div>
   </header>
-
-  <div class="page-content">
 
     <!-- CONNECT FEATURE SPOTLIGHT -->
     <div class="section">
@@ -138,11 +164,11 @@
     <div class="subscribe">
       <div class="container">
         <div class="row">
-          <div class="col-sm-7 col-sm-offset-1 subscribe-input">
+          <div class="col-sm-8 subscribe-input">
             <input type="text" placeholder="Enter email address">
           </div>
-          <div class="col-sm-3">
-            <button class="btn-geekin btn-geekin-white btn-subscribe">Subscribe</button>
+          <div class="col-sm-4">
+            <button class="btn-geekin btn-subscribe">Subscribe</button>
           </div>
         </div>
       </div>
@@ -196,6 +222,7 @@
         </div>
       </div>
     </footer>
+
   </div>
 
 
