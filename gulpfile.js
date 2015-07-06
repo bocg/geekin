@@ -5,17 +5,18 @@ var gulp = require('gulp');
 var jshint = require('gulp-jshint'),
     clean = require('gulp-clean'),
     sass = require('gulp-sass'),
+    sourcemaps = require('gulp-sourcemaps'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     cssmin = require('gulp-minify-css'),
     rename = require('gulp-rename'),
     gutil = require('gulp-util'),
-    // copy = require('gulp-copy'),
-    cache = require('gulp-cache'),
     imagemin = require('gulp-imagemin'),
     autoprefixer = require('gulp-autoprefixer'),
     minifyHtml = require('gulp-minify-html'),
+    // copy = require('gulp-copy'),
     // del = require('del'),
+    // cache = require('gulp-cache'),
     concatVendor = require('gulp-concat-vendor'),
     browsersync = require('browser-sync').create();
 
@@ -30,11 +31,10 @@ var jshint = require('gulp-jshint'),
     // Compile Our Sass for development (NOT VENDOR)
     gulp.task('sass-dev', function() {
         return gulp.src('assets/stylesheets/scss/*.scss')
+            .pipe(sourcemaps.init())
             .pipe(sass({ errLogToConsole: true }).on('error', sass.logError))
-            .pipe(autoprefixer({
-              browser: ['last 2 versions'],
-            }))
-            .pipe(gulp.dest('assets/stylesheets/css'))           //Default file name is style.css
+            .pipe(sourcemaps.write('/'))
+            .pipe(gulp.dest('assets/stylesheets/css'))
     });
 
     // Sass build task
@@ -68,14 +68,14 @@ var jshint = require('gulp-jshint'),
           //.pipe(gulp.dest('dist'))
     });
 
-    // Images Build
+    // Images Build task
     gulp.task('img-build', function() {
         return gulp.src('assets/img/*')
           .pipe(imagemin())
           .pipe(gulp.dest('dist/assets/img'))
     });
 
-    // Vendor Script Concat
+    // Vendor Script Concat task
     gulp.task('vendorcss', function() {
         return gulp.src([
           'bower_components/animate.css/animate.css',
