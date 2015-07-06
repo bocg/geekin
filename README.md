@@ -1,6 +1,30 @@
 # geekin
 Website for geekin radio -- http://www.getgeek.in/
 
+##Gulp.js instructions
+
+This file uses gulp.js for general development purposes.
+
+####Install Gulp globally
+First, make sure you have installed gulp globally. Run the following command:
+
+`npm install gulp -g`
+
+####Install Gulp and dev dependencies for this repo
+Next, to install gulp for this repo and all the required dependencies, run the following command:
+
+`npm install`
+
+####Gulp Tasks
+
+At the moment, we have just a single task in the gulpfile.js. This task lints JavaScript, auto compiles SASS on file change, and runs a development server that live reloads on changes to JavaScripts, SCSS, and HTML pages.
+
+To run this task, type the following command into terminal from the project root (geekin):
+
+`gulp dev`
+
+##SASS compiling instructions
+
 To auto compile SASS:
 
 go to project directory, then enter the following commands:
