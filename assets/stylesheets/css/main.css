@@ -15,6 +15,9 @@
 .container {
   max-width: 1154px; }
 
+body {
+  transition: all 0.3s ease-out; }
+
 ul {
   padding: 0px;
   margin: 0px;
@@ -29,18 +32,21 @@ img {
   src: url("../../fonts/proximanova/light/proximanova-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/proximanova/light/proximanova-light-webfont.woff2") format("woff2"), url("../../fonts/proximanova/lighta/proximanova-light-webfont.woff") format("woff"), url("../../fonts/proximanova/light/proximanova-light-webfont.ttf") format("truetype"), url("../../fonts/proximanova/light/proximanova-light-webfont.svg#proxima_novalight") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'proxima_nova_rgbold';
   src: url("../../fonts/proximanova/bold/proximanova-bold-webfont.eot");
   src: url("../../fonts/proximanova/bold/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/proximanova/bold/proximanova-bold-webfont.woff2") format("woff2"), url("../../fonts/proximanova/bold/proximanova-bold-webfont.woff") format("woff"), url("../../fonts/proximanova/bold/proximanova-bold-webfont.ttf") format("truetype"), url("../../fonts/proximanova/bold/proximanova-bold-webfont.svg#proxima_nova_rgbold") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'proxima_nova_rgregular';
   src: url("../../fonts/proximanova/regular/proximanova-regular-webfont.eot");
   src: url("../../fonts/proximanova/regular/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/proximanova/regular/proximanova-regular-webfont.woff2") format("woff2"), url("../../fonts/proximanova/regular/proximanova-regular-webfont.woff") format("woff"), url("../../fonts/proximanova/regular/proximanova-regular-webfont.ttf") format("truetype"), url("../../fonts/proximanova/regular/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 body {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -48,7 +54,9 @@ body {
   color: #8E93A2;
   font-family: "proxima_nova_rgregular", "Helvetica", "Arial", sans-serif; }
 
-a:active, a:visited, a:hover {
+a:active,
+a:visited,
+a:hover {
   text-decoration: none; }
 
 .quotes-font, .quote, .about-title {
@@ -81,7 +89,7 @@ a:active, a:visited, a:hover {
   color: #FF7E00;
   padding-bottom: 3px;
   border-bottom: 1px solid rgba(255, 126, 0, 0.2);
-  transition: opacity .3s ease-out; }
+  transition: opacity 0.3s ease-out; }
   .orange-link:hover {
     color: #FF7E00;
     opacity: .8; }
@@ -143,10 +151,10 @@ nav {
         display: block;
         text-transform: uppercase;
         color: white;
-        opacity: .5;
+        opacity: .7;
         letter-spacing: 4px;
-        transition: all .3s ease-out;
-        font-size: 1em; }
+        transition: all 0.3s ease-out;
+        font-size: 1.18em; }
         .nav-center ul li a.active,
         .nav-right ul li a.active {
           opacity: 1; }
@@ -168,7 +176,7 @@ nav {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 100%;
   border: 4px solid rgba(255, 255, 255, 0.6);
-  transition: background-color .3s ease-out; }
+  transition: background-color 0.3s ease-out; }
   .play-button-wrapper:hover {
     background-color: rgba(0, 0, 0, 0.5);
     border-color: white; }
@@ -182,7 +190,7 @@ nav {
   margin-top: 35px;
   width: 40px;
   height: 40px;
-  z-index: 1001; }
+  z-index: 6001; }
   .menu-button-wrapper:hover .menu-button div:first-child {
     transform: translateY(-5px); }
   .menu-button-wrapper:hover .menu-button div:last-child {
@@ -198,6 +206,7 @@ nav {
 
 .menu-button.orange div {
   background-color: #FF7E00; }
+
 .menu-button div {
   top: 10px;
   right: 0px;
@@ -206,15 +215,31 @@ nav {
   height: 4px;
   border-radius: 40px;
   background-color: white;
-  transition: all .3s ease-out; }
+  transition: all 0.3s ease-out; }
+
 .menu-button div:first-child {
   top: 0px; }
+
 .menu-button div:last-child {
   top: 20px; }
 
 .menu-button-text {
   opacity: 1;
   margin-right: 45px; }
+
+.blur-overlay {
+  position: fixed;
+  z-index: 3000;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: transform 0.3s ease-out; }
+  .blur-overlay.active {
+    transform: scale(1); }
 
 header {
   width: 100%;
@@ -245,7 +270,7 @@ header {
   margin: 0 auto;
   text-align: center;
   max-width: 680px;
-  width: 65%; }
+  width: 70%; }
 
 .btn-wrapper-center {
   text-align: center;
@@ -279,7 +304,7 @@ header {
   border-radius: 4px;
   color: white;
   background-color: transparent;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
   cursor: pointer; }
   .download-button:hover {
     background-color: rgba(0, 0, 0, 0.3);
@@ -326,13 +351,13 @@ footer {
     padding: 15px;
     padding-left: 25px;
     padding-right: 25px;
-    border: 1px solid #e3e6ec;
+    border: 1px solid #B6BCCD;
     border-radius: 8px; }
   footer i, footer p, footer a {
     color: #07143A;
     opacity: .5; }
   footer i, footer a {
-    transition: all .3s ease-out; }
+    transition: all 0.3s ease-out; }
     footer i:hover, footer a:hover {
       opacity: 1; }
   footer p {
@@ -352,7 +377,7 @@ footer {
   min-width: 320px;
   text-align: center;
   border-radius: 40px;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
   font-size: 1.118em; }
   .btn-geekin:hover {
     color: inherit;
@@ -389,8 +414,9 @@ footer {
     color: white;
     background-color: transparent;
     text-transform: uppercase;
-    transition: opacity .3s ease-out;
+    transition: opacity 0.3s ease-out;
     outline: none;
+    border: 0;
     font-size: 1.218em; }
     .subscribe button.btn-subscribe:hover {
       opacity: .7; }
@@ -401,7 +427,7 @@ footer {
     margin-bottom: 30px;
     border: 0;
     border-bottom: 2px solid #ff8b1a;
-    transition: border-color .3s ease-out;
+    transition: border-color 0.3s ease-out;
     background-color: transparent;
     color: white;
     font-size: 2.218em;
@@ -431,7 +457,7 @@ footer {
   height: 126px;
   width: 100%;
   background-color: white;
-  border-bottom: 1px solid #e3e6ec;
+  border-bottom: 1px solid #B6BCCD;
   color: #B6BCCD; }
   .social-bar ul {
     height: 100%;
@@ -443,14 +469,14 @@ footer {
       display: inline-block;
       width: 33%;
       text-align: center;
-      border-right: 1px solid #e3e6ec; }
+      border-right: 1px solid #B6BCCD; }
       .social-bar ul li a {
         padding: 20px;
         padding-top: 40px;
         display: block;
         height: 100%;
         color: #B6BCCD;
-        transition: color .3s ease-out; }
+        transition: color 0.3s ease-out; }
         .social-bar ul li a:hover {
           color: #7984a4; }
       .social-bar ul li:last-child {
@@ -576,7 +602,7 @@ header.header-home .caption {
   width: 75%;
   margin: 0 auto;
   color: #07143A;
-  border-bottom: 1px solid #e3e6ec; }
+  border-bottom: 1px solid #B6BCCD; }
   .article-snippet:first-child {
     padding-top: 0px; }
   .article-snippet h3 {
@@ -617,13 +643,24 @@ header.header-home .caption {
   display: none; }
 
 @media screen and (max-width: 990px) {
+  header {
+    height: 600px; }
+  .caption {
+    margin-top: 50px;
+    margin-bottom: 10px; }
+  .feature-text {
+    padding-top: 0px; }
+  .header-home {
+    height: 600px; }
+    .header-home .header-logo {
+      margin-top: 60px; }
+    .header-home nav {
+      padding-top: 0px; }
   .section p {
     line-height: 1.6;
     margin-bottom: 20px; }
-
   .caption-button-wrapper .btn-geekin {
     margin-bottom: 20px; }
-
   footer {
     padding-top: 40px;
     padding-bottom: 40px; }
@@ -643,14 +680,11 @@ header.header-home .caption {
       text-align: center; }
       footer .col-download-links h4 {
         text-align: center; }
-
   .section-blog {
     height: 320px;
     padding-top: 30px; }
-
   .caption-button-wrapper a:first-child.btn-geekin {
     margin-right: 0; }
-
   .nav-left {
     display: block;
     float: none;
@@ -658,18 +692,17 @@ header.header-home .caption {
     width: 90%;
     max-width: 300px;
     text-align: center; }
-
   .nav-fullscreen {
     position: fixed;
     top: 0px;
     left: 0px;
-    background-color: rgba(255, 126, 0, 0.8);
-    z-index: 1000;
+    background-color: rgba(255, 126, 0, 0.9);
+    z-index: 5000;
     height: 100%;
     width: 100%;
     transform-origin: top;
     transform: translateY(-150%);
-    transition: all .5s ease-out; }
+    transition: all 0.5s ease-out; }
     .nav-fullscreen .social-bar {
       margin-top: 30px;
       color: white;
@@ -706,49 +739,38 @@ header.header-home .caption {
     .nav-fullscreen ul {
       width: 70%;
       margin: 0 auto; }
-
   .nav-right {
     display: block; }
     .nav-right ul li {
       width: 100%;
       display: block; } }
+
 @media screen and (max-width: 776px) {
   body {
     font-size: 14px; }
-
   .article-snippet {
     width: 90%; }
     .article-snippet span.date {
       display: block; }
-
   .inner-container {
     width: 88%; }
-
   .caption {
     width: 80%;
     margin-top: 60px; }
-
   .menu-button-wrapper {
-    top: -10px;
+    top: 0px;
     right: 30px; }
-
   .btn-geekin {
-    min-width: 240px; }
-
+    min-width: 200px; }
   .col-press-image {
     text-align: center; }
-
   .section-header .section-subheader {
     font-size: .5em;
     line-height: 1.2; }
-
-  .btn-geekin-blog {
-    width: 100%; }
-
   .section-header {
     font-size: 2.318em;
-    margin-bottom: 60px; }
-
+    margin-bottom: 60px;
+    letter-spacing: 0px; }
   .subscribe .subscribe-input {
     text-align: center; }
   .subscribe input {
@@ -758,6 +780,7 @@ header.header-home .caption {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 60px; } }
+
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -770,8 +793,8 @@ header.header-home .caption {
   overflow-y: hidden; }
 
 .blurred {
-  filter: blur(5px);
-  -webkit-filter: blur(5px); }
+  filter: blur(10px);
+  -webkit-filter: blur(10px); }
 
 .pll {
   padding-left: 20px; }
@@ -779,7 +802,14 @@ header.header-home .caption {
 .prl {
   padding-right: 20px; }
 
-body {
-  transition: all .3s ease-out; }
+::selection {
+  color: white;
+  background: rgba(255, 126, 0, 0.6);
+  /* Gecko Browsers */ }
 
-/*# sourceMappingURL=main.css.map */
+::-moz-selection {
+  color: white;
+  background: rgba(255, 126, 0, 0.6);
+  /* Gecko Browsers */ }
+
+/*# sourceMappingURL=/main.css.map */
