@@ -3,42 +3,59 @@
 }
 
 @media screen and (max-width:990px){
+
+  header { height: 600px; }
+
+  .caption {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+
+  .feature-text { padding-top: 0px; }
+
+  .header-home {
+    height:600px;
+
+    .header-logo { margin-top: 60px; }
+
+    nav { padding-top: 0px; }
+
+  }
+
   .section p {
     line-height:1.6;
     margin-bottom: 20px;
   }
 
   .caption-button-wrapper {
-    .btn-geekin {
-      margin-bottom:20px;
-    }
+    .btn-geekin { margin-bottom:20px; }
   }
 
   footer {
     padding-top: 40px;
     padding-bottom:40px;
+
     [class^=col] {
       text-align: center;
       margin-bottom:20px;
-      h4 {
-        text-align: left;
-      }
+
+      h4 { text-align: left; }
+
       ul {
         margin-left: auto;
         margin-right:auto;
         max-width:300px;
         text-align: left;
       }
+
     }
-    .download-buttons {
-      text-align: center;
-    }
+
+    .download-buttons { text-align: center; }
     .col-download-links {
-      h4 {
-        text-align: center;
-      }
       text-align: center;
+      h4 { text-align: center; }
     }
+
   }
 
   .section-blog {
@@ -47,9 +64,7 @@
   }
 
   .caption-button-wrapper {
-    a:first-child.btn-geekin {
-      margin-right: 0;
-    }
+    a:first-child.btn-geekin { margin-right: 0; }
   }
   .nav-left {
     display:block;
@@ -63,8 +78,8 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    background-color: rgba($orange, .8);
-    z-index:1000;
+    background-color: rgba($orange, .9);
+    z-index:5000;
     height: 100%;
     width:100%;
     transform-origin: top;
@@ -136,9 +151,7 @@
     }
   }
 
-  .inner-container {
-    width:88%;
-  }
+  .inner-container { width:88%; }
 
   .caption {
     width:80%;
@@ -146,46 +159,37 @@
   }
 
   .menu-button-wrapper {
-    top:-10px;
+    top: 0px;
     right:30px;
   }
 
-  .btn-geekin {
-    min-width:240px;
-  }
+  .btn-geekin { min-width:200px; }
 
-  .col-press-image {
-    text-align: center;
-  }
+  .col-press-image { text-align: center; }
 
   .section-header .section-subheader {
     font-size:.5em;
     line-height: 1.2;
   }
 
-  .btn-geekin-blog {
-    width:100%;
-  }
-
   .section-header {
     font-size:2.318em;
     margin-bottom:60px;
+    letter-spacing: 0px;
   }
 
   .subscribe {
-    .subscribe-input {
-      text-align: center;
-    }
 
-    input {
-      width:80%;
-    }
-    
+    .subscribe-input { text-align: center; }
+
+    input { width:80%; }
+
     button.btn-subscribe {
       display: block;
       width:80%;
       margin: 0 auto;
       margin-bottom:60px;
     }
+
   }
 }

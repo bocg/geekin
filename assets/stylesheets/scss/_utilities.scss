@@ -12,8 +12,8 @@
 }
 
 .blurred {
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
 }
 
 .pll {
@@ -24,6 +24,11 @@
   padding-right: 20px;
 }
 
-body {
-  transition: all .3s ease-out;
+::selection {
+  color: white;
+  background: rgba($orange, .6); /* Gecko Browsers */
+}
+::-moz-selection {
+  color: white;
+  background: rgba($orange, .6); /* Gecko Browsers */
 }

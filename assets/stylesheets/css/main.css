@@ -15,6 +15,9 @@
 .container {
   max-width: 1154px; }
 
+body {
+  transition: all 0.3s ease-out; }
+
 ul {
   padding: 0px;
   margin: 0px;
@@ -86,8 +89,7 @@ a:hover {
   color: #FF7E00;
   padding-bottom: 3px;
   border-bottom: 1px solid rgba(255, 126, 0, 0.2);
-  -webkit-transition: opacity 0.3s ease-out;
-          transition: opacity 0.3s ease-out; }
+  transition: opacity 0.3s ease-out; }
   .orange-link:hover {
     color: #FF7E00;
     opacity: .8; }
@@ -149,11 +151,10 @@ nav {
         display: block;
         text-transform: uppercase;
         color: white;
-        opacity: .5;
+        opacity: .7;
         letter-spacing: 4px;
-        -webkit-transition: all 0.3s ease-out;
-                transition: all 0.3s ease-out;
-        font-size: 1em; }
+        transition: all 0.3s ease-out;
+        font-size: 1.18em; }
         .nav-center ul li a.active,
         .nav-right ul li a.active {
           opacity: 1; }
@@ -175,8 +176,7 @@ nav {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 100%;
   border: 4px solid rgba(255, 255, 255, 0.6);
-  -webkit-transition: background-color 0.3s ease-out;
-          transition: background-color 0.3s ease-out; }
+  transition: background-color 0.3s ease-out; }
   .play-button-wrapper:hover {
     background-color: rgba(0, 0, 0, 0.5);
     border-color: white; }
@@ -190,27 +190,19 @@ nav {
   margin-top: 35px;
   width: 40px;
   height: 40px;
-  z-index: 1001; }
+  z-index: 6001; }
   .menu-button-wrapper:hover .menu-button div:first-child {
-    -webkit-transform: translateY(-5px);
-        -ms-transform: translateY(-5px);
-            transform: translateY(-5px); }
+    transform: translateY(-5px); }
   .menu-button-wrapper:hover .menu-button div:last-child {
-    -webkit-transform: translateY(5px);
-        -ms-transform: translateY(5px);
-            transform: translateY(5px); }
+    transform: translateY(5px); }
   .menu-button-wrapper .menu-button.active div {
     background-color: white; }
   .menu-button-wrapper .menu-button.active div:first-child {
-    -webkit-transform: rotate(45deg) translateY(5px) translateX(10px);
-        -ms-transform: rotate(45deg) translateY(5px) translateX(10px);
-            transform: rotate(45deg) translateY(5px) translateX(10px); }
+    transform: rotate(45deg) translateY(5px) translateX(10px); }
   .menu-button-wrapper .menu-button.active div.middle {
     opacity: 0; }
   .menu-button-wrapper .menu-button.active div:last-child {
-    -webkit-transform: rotate(-45deg) translateY(-5px) translateX(10px);
-        -ms-transform: rotate(-45deg) translateY(-5px) translateX(10px);
-            transform: rotate(-45deg) translateY(-5px) translateX(10px); }
+    transform: rotate(-45deg) translateY(-5px) translateX(10px); }
 
 .menu-button.orange div {
   background-color: #FF7E00; }
@@ -223,8 +215,7 @@ nav {
   height: 4px;
   border-radius: 40px;
   background-color: white;
-  -webkit-transition: all 0.3s ease-out;
-          transition: all 0.3s ease-out; }
+  transition: all 0.3s ease-out; }
 
 .menu-button div:first-child {
   top: 0px; }
@@ -235,6 +226,20 @@ nav {
 .menu-button-text {
   opacity: 1;
   margin-right: 45px; }
+
+.blur-overlay {
+  position: fixed;
+  z-index: 3000;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: transform 0.3s ease-out; }
+  .blur-overlay.active {
+    transform: scale(1); }
 
 header {
   width: 100%;
@@ -265,7 +270,7 @@ header {
   margin: 0 auto;
   text-align: center;
   max-width: 680px;
-  width: 65%; }
+  width: 70%; }
 
 .btn-wrapper-center {
   text-align: center;
@@ -277,7 +282,7 @@ header {
   max-width: 240px;
   width: 50%;
   display: block;
-  margin: 100px auto 70px; }
+  margin: 140px auto 70px; }
 
 .header-home {
   height: 800px; }
@@ -299,8 +304,7 @@ header {
   border-radius: 4px;
   color: white;
   background-color: transparent;
-  -webkit-transition: all 0.3s ease-out;
-          transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   cursor: pointer; }
   .download-button:hover {
     background-color: rgba(0, 0, 0, 0.3);
@@ -347,14 +351,13 @@ footer {
     padding: 15px;
     padding-left: 25px;
     padding-right: 25px;
-    border: 1px solid #e3e6ec;
+    border: 1px solid #B6BCCD;
     border-radius: 8px; }
   footer i, footer p, footer a {
     color: #07143A;
     opacity: .5; }
   footer i, footer a {
-    -webkit-transition: all 0.3s ease-out;
-            transition: all 0.3s ease-out; }
+    transition: all 0.3s ease-out; }
     footer i:hover, footer a:hover {
       opacity: 1; }
   footer p {
@@ -374,8 +377,7 @@ footer {
   min-width: 320px;
   text-align: center;
   border-radius: 40px;
-  -webkit-transition: all 0.3s ease-out;
-          transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   font-size: 1.118em; }
   .btn-geekin:hover {
     color: inherit;
@@ -403,7 +405,6 @@ footer {
   padding-top: 60px; }
   .subscribe button.btn-subscribe {
     font-family: "proxima_nova_rgbold", "Helvetica", "Arial", sans-serif;
-    margin-top: 22px;
     min-width: 220px;
     margin-bottom: 60px;
     padding-left: 20px;
@@ -413,9 +414,9 @@ footer {
     color: white;
     background-color: transparent;
     text-transform: uppercase;
-    -webkit-transition: opacity 0.3s ease-out;
-            transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
     outline: none;
+    border: 0;
     font-size: 1.218em; }
     .subscribe button.btn-subscribe:hover {
       opacity: .7; }
@@ -426,8 +427,7 @@ footer {
     margin-bottom: 30px;
     border: 0;
     border-bottom: 2px solid #ff8b1a;
-    -webkit-transition: border-color 0.3s ease-out;
-            transition: border-color 0.3s ease-out;
+    transition: border-color 0.3s ease-out;
     background-color: transparent;
     color: white;
     font-size: 2.218em;
@@ -457,7 +457,7 @@ footer {
   height: 126px;
   width: 100%;
   background-color: white;
-  border-bottom: 1px solid #e3e6ec;
+  border-bottom: 1px solid #B6BCCD;
   color: #B6BCCD; }
   .social-bar ul {
     height: 100%;
@@ -469,15 +469,14 @@ footer {
       display: inline-block;
       width: 33%;
       text-align: center;
-      border-right: 1px solid #e3e6ec; }
+      border-right: 1px solid #B6BCCD; }
       .social-bar ul li a {
         padding: 20px;
         padding-top: 40px;
         display: block;
         height: 100%;
         color: #B6BCCD;
-        -webkit-transition: color 0.3s ease-out;
-                transition: color 0.3s ease-out; }
+        transition: color 0.3s ease-out; }
         .social-bar ul li a:hover {
           color: #7984a4; }
       .social-bar ul li:last-child {
@@ -603,7 +602,7 @@ header.header-home .caption {
   width: 75%;
   margin: 0 auto;
   color: #07143A;
-  border-bottom: 1px solid #e3e6ec; }
+  border-bottom: 1px solid #B6BCCD; }
   .article-snippet:first-child {
     padding-top: 0px; }
   .article-snippet h3 {
@@ -644,6 +643,19 @@ header.header-home .caption {
   display: none; }
 
 @media screen and (max-width: 990px) {
+  header {
+    height: 600px; }
+  .caption {
+    margin-top: 50px;
+    margin-bottom: 10px; }
+  .feature-text {
+    padding-top: 0px; }
+  .header-home {
+    height: 600px; }
+    .header-home .header-logo {
+      margin-top: 60px; }
+    .header-home nav {
+      padding-top: 0px; }
   .section p {
     line-height: 1.6;
     margin-bottom: 20px; }
@@ -684,18 +696,13 @@ header.header-home .caption {
     position: fixed;
     top: 0px;
     left: 0px;
-    background-color: rgba(255, 126, 0, 0.8);
-    z-index: 1000;
+    background-color: rgba(255, 126, 0, 0.9);
+    z-index: 5000;
     height: 100%;
     width: 100%;
-    -webkit-transform-origin: top;
-        -ms-transform-origin: top;
-            transform-origin: top;
-    -webkit-transform: translateY(-150%);
-        -ms-transform: translateY(-150%);
-            transform: translateY(-150%);
-    -webkit-transition: all 0.5s ease-out;
-            transition: all 0.5s ease-out; }
+    transform-origin: top;
+    transform: translateY(-150%);
+    transition: all 0.5s ease-out; }
     .nav-fullscreen .social-bar {
       margin-top: 30px;
       color: white;
@@ -725,9 +732,7 @@ header.header-home .caption {
       /* Chrome, Safari, Opera */
       animation-delay: 1s; }
     .nav-fullscreen.active {
-      -webkit-transform: translateY(0%);
-          -ms-transform: translateY(0%);
-              transform: translateY(0%); }
+      transform: translateY(0%); }
     .nav-fullscreen .nav-logo {
       margin-top: 90px;
       margin-bottom: 30px; }
@@ -753,20 +758,19 @@ header.header-home .caption {
     width: 80%;
     margin-top: 60px; }
   .menu-button-wrapper {
-    top: -10px;
+    top: 0px;
     right: 30px; }
   .btn-geekin {
-    min-width: 240px; }
+    min-width: 200px; }
   .col-press-image {
     text-align: center; }
   .section-header .section-subheader {
     font-size: .5em;
     line-height: 1.2; }
-  .btn-geekin-blog {
-    width: 100%; }
   .section-header {
     font-size: 2.318em;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    letter-spacing: 0px; }
   .subscribe .subscribe-input {
     text-align: center; }
   .subscribe input {
@@ -789,8 +793,8 @@ header.header-home .caption {
   overflow-y: hidden; }
 
 .blurred {
-  filter: blur(5px);
-  -webkit-filter: blur(5px); }
+  filter: blur(10px);
+  -webkit-filter: blur(10px); }
 
 .pll {
   padding-left: 20px; }
@@ -798,6 +802,14 @@ header.header-home .caption {
 .prl {
   padding-right: 20px; }
 
-body {
-  -webkit-transition: all 0.3s ease-out;
-          transition: all 0.3s ease-out; }
+::selection {
+  color: white;
+  background: rgba(255, 126, 0, 0.6);
+  /* Gecko Browsers */ }
+
+::-moz-selection {
+  color: white;
+  background: rgba(255, 126, 0, 0.6);
+  /* Gecko Browsers */ }
+
+/*# sourceMappingURL=/main.css.map */

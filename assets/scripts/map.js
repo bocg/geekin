@@ -14,145 +14,145 @@ $(document).ready(function() {
       draggable: false,
       scrollwheel: false,
       styles: [
+        {
+            "featureType": "all",
+            "elementType": "all",
+            "stylers": [
                 {
-                    "featureType": "all",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "saturation": "-100"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "landscape.man_made",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "color": "#f5f5f5"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "landscape.natural",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "color": "#f5f5f5"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "landscape.natural.terrain",
-                    "elementType": "labels.text.fill",
-                    "stylers": [
-                        {
-                            "hue": "#ff0000"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "color": "#e8e8e8"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi",
-                    "elementType": "labels.text",
-                    "stylers": [
-                        {
-                            "visibility": "on"
-                        },
-                        {
-                            "color": "#fefefe"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi",
-                    "elementType": "labels.text.fill",
-                    "stylers": [
-                        {
-                            "color": "#642185"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi.park",
-                    "elementType": "labels.text",
-                    "stylers": [
-                        {
-                            "saturation": "-71"
-                        },
-                        {
-                            "lightness": "-59"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi.park",
-                    "elementType": "labels.text.fill",
-                    "stylers": [
-                        {
-                            "visibility": "simplified"
-                        },
-                        {
-                            "color": "#d03535"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi.park",
-                    "elementType": "labels.text.stroke",
-                    "stylers": [
-                        {
-                            "hue": "#0bff00"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road",
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "visibility": "simplified"
-                        },
-                        {
-                            "color": "#fe934c"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road",
-                    "elementType": "labels.text.fill",
-                    "stylers": [
-                        {
-                            "color": "#666666"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road",
-                    "elementType": "labels.text.stroke",
-                    "stylers": [
-                        {
-                            "color": "#ffffff"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "water",
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "color": "#9a96c5"
-                        }
-                    ]
+                    "saturation": "-100"
                 }
             ]
+        },
+        {
+            "featureType": "landscape.man_made",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "color": "#f5f5f5"
+                }
+            ]
+        },
+        {
+            "featureType": "landscape.natural",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "color": "#f5f5f5"
+                }
+            ]
+        },
+        {
+            "featureType": "landscape.natural.terrain",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "hue": "#ff0000"
+                }
+            ]
+        },
+        {
+            "featureType": "poi",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "color": "#e8e8e8"
+                }
+            ]
+        },
+        {
+            "featureType": "poi",
+            "elementType": "labels.text",
+            "stylers": [
+                {
+                    "visibility": "on"
+                },
+                {
+                    "color": "#fefefe"
+                }
+            ]
+        },
+        {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#642185"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.park",
+            "elementType": "labels.text",
+            "stylers": [
+                {
+                    "saturation": "-71"
+                },
+                {
+                    "lightness": "-59"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "visibility": "simplified"
+                },
+                {
+                    "color": "#d03535"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.park",
+            "elementType": "labels.text.stroke",
+            "stylers": [
+                {
+                    "hue": "#0bff00"
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "visibility": "simplified"
+                },
+                {
+                    "color": "#fe934c"
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#666666"
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "labels.text.stroke",
+            "stylers": [
+                {
+                    "color": "#ffffff"
+                }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#9a96c5"
+                }
+            ]
+        }
+      ]
     });
 
     var circle = {
@@ -172,13 +172,13 @@ $(document).ready(function() {
     });
 
     var contentString = '<div id="map-infowindow-content">'+
-      '<h2 id="firstHeading" class="firstHeading">FIND GEEKIN</h1>'+
-      '<div id="mapMarkerWindow">'+
-      '<p>647 B King Street,</p>'+
-      '<p>Charleston, 29403 SC</p>'+
-      '</div>'+
-      '<a href="http://google.com" target="_blank">Find us</a>'+
-      '</div>';
+                          '<h2 id="firstHeading" class="firstHeading">FIND GEEKIN</h1>'+
+                          '<div id="mapMarkerWindow">'+
+                            '<p>647 B King Street,</p>'+
+                            '<p>Charleston, 29403 SC</p>'+
+                          '</div>'+
+                          '<a href="http://google.com" target="_blank">Find us</a>'+
+                        '</div>';
 
     var infowindow = new google.maps.InfoWindow({
         content: contentString,

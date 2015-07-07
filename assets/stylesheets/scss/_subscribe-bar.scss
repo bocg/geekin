@@ -7,7 +7,6 @@
 
   button.btn-subscribe {
     font-family:$body-font-bold;
-    margin-top:22px;
     min-width:220px;
     margin-bottom:60px;
     padding-left:20px;
@@ -19,6 +18,7 @@
     text-transform: uppercase;
     transition: opacity .3s ease-out;
     outline:none;
+    border: 0;
     font-size:1.218em;
     &:hover {
       opacity:.7;

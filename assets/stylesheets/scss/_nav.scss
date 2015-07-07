@@ -46,16 +46,16 @@ nav {
       a {
         display: block;
         text-transform: uppercase;
-        color:white;
-        opacity:.5;
-        letter-spacing:4px;
+        color: white;
+        opacity: .7;
+        letter-spacing: 4px;
         transition: all .3s ease-out;
-        font-size:1em;
+        font-size: 1.18em;
         &.active {
-          opacity:1;
+          opacity: 1;
         }
         &:hover {
-          opacity:1;
+          opacity: 1;
         }
       }
     }
@@ -92,7 +92,7 @@ nav {
   margin-top:35px;
   width:40px;
   height:40px;
-  z-index:1001;
+  z-index:6001;
   &:hover .menu-button div:first-child {
     transform:translateY(-5px);
   }
@@ -142,4 +142,20 @@ nav {
 .menu-button-text {
   opacity:1;
   margin-right:45px;
+}
+
+.blur-overlay {
+  position: fixed;
+  z-index: 3000;
+  bottom: 0;
+  left: 0;
+  height:100%;
+  width:100%;
+  background-color: rgba(white, .9);
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: transform .3s ease-out;
+  &.active {
+    transform: scale(1);
+  }
 }
