@@ -151,7 +151,7 @@ nav {
         display: block;
         text-transform: uppercase;
         color: white;
-        opacity: .5;
+        opacity: .7;
         letter-spacing: 4px;
         transition: all 0.3s ease-out;
         font-size: 1.18em; }
@@ -190,7 +190,7 @@ nav {
   margin-top: 35px;
   width: 40px;
   height: 40px;
-  z-index: 1001; }
+  z-index: 6001; }
   .menu-button-wrapper:hover .menu-button div:first-child {
     transform: translateY(-5px); }
   .menu-button-wrapper:hover .menu-button div:last-child {
@@ -226,6 +226,20 @@ nav {
 .menu-button-text {
   opacity: 1;
   margin-right: 45px; }
+
+.blur-overlay {
+  position: fixed;
+  z-index: 3000;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: transform 0.3s ease-out; }
+  .blur-overlay.active {
+    transform: scale(1); }
 
 header {
   width: 100%;
@@ -337,7 +351,7 @@ footer {
     padding: 15px;
     padding-left: 25px;
     padding-right: 25px;
-    border: 1px solid #e3e6ec;
+    border: 1px solid #B6BCCD;
     border-radius: 8px; }
   footer i, footer p, footer a {
     color: #07143A;
@@ -443,7 +457,7 @@ footer {
   height: 126px;
   width: 100%;
   background-color: white;
-  border-bottom: 1px solid #e3e6ec;
+  border-bottom: 1px solid #B6BCCD;
   color: #B6BCCD; }
   .social-bar ul {
     height: 100%;
@@ -455,7 +469,7 @@ footer {
       display: inline-block;
       width: 33%;
       text-align: center;
-      border-right: 1px solid #e3e6ec; }
+      border-right: 1px solid #B6BCCD; }
       .social-bar ul li a {
         padding: 20px;
         padding-top: 40px;
@@ -588,7 +602,7 @@ header.header-home .caption {
   width: 75%;
   margin: 0 auto;
   color: #07143A;
-  border-bottom: 1px solid #e3e6ec; }
+  border-bottom: 1px solid #B6BCCD; }
   .article-snippet:first-child {
     padding-top: 0px; }
   .article-snippet h3 {
@@ -682,8 +696,8 @@ header.header-home .caption {
     position: fixed;
     top: 0px;
     left: 0px;
-    background-color: rgba(255, 126, 0, 0.8);
-    z-index: 1000;
+    background-color: rgba(255, 126, 0, 0.9);
+    z-index: 5000;
     height: 100%;
     width: 100%;
     transform-origin: top;
