@@ -177,7 +177,7 @@ $(document).ready(function() {
                             '<p>647 B King Street,</p>'+
                             '<p>Charleston, 29403 SC</p>'+
                           '</div>'+
-                          '<a href="http://google.com" target="_blank">Find us</a>'+
+                          '<a href="https://goo.gl/maps/h1yiI" target="_blank">Find us</a>'+
                         '</div>';
 
     var infowindow = new google.maps.InfoWindow({
