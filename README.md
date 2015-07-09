@@ -1,5 +1,23 @@
 # geekin
 Website for geekin radio -- http://www.getgeek.in/
+This site is in development at the following -- http://www.geekin-radio.github.io/geekin
+
+##When downloading/cloning this repo...
+
+You will need to have npm (https://www.npmjs.com/) and bower (http://bower.io/#install-bower) installed to install the dependencies for this repo and its development/build process.
+
+First you'll need to install Node.js (which comes with NPM):
+https://nodejs.org/download/
+
+Then use NPM to install bower. Type the following in your terminal:
+`npm install -g bower`
+- the '-g' flag means that you want npm to install this node module globally - so you can use it anywhere else on your machine.
+
+Next up, assuming you have the repo cloned, you will want to run the following commands once you clone this repo.
+`bower install`
+`npm install`
+
+You now have all the dependencies for this repo installed for both final build and devlopment. Gulp is used to run the development tasks and live reload server. Be sure to follow the directions below to get gulp and running.
 
 ##Gulp.js instructions
 

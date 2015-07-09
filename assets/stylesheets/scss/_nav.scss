@@ -151,11 +151,66 @@ nav {
   left: 0;
   height:100%;
   width:100%;
-  background-color: rgba(white, .9);
+  background-color: rgba($orange, .9);
   transform-origin: bottom;
   transform: scaleY(0);
   transition: transform .3s ease-out;
   &.active {
     transform: scale(1);
+  }
+}
+
+.nav-fullscreen {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba($orange, .9);
+  z-index:5000;
+  height: 100%;
+  width:100%;
+  transform-origin: top;
+  transform: translateY(-150%);
+  transition: all .5s ease-out;
+  .social-bar {
+    margin-top:30px;
+    color:white;
+    background-color: transparent;
+    border:0;
+    li {
+      display:inline-block;
+      font-size:2.618em;
+      width:20%;
+    }
+  }
+  li {
+    margin-bottom:10px;
+    font-size:1.618em;
+  }
+  li:nth-child(1) {
+    -webkit-animation-delay: .25s; /* Chrome, Safari, Opera */
+    animation-delay: .25s;
+  }
+  li:nth-child(2) {
+    -webkit-animation-delay: .5s; /* Chrome, Safari, Opera */
+    animation-delay: .5s;
+  }
+  li:nth-child(3) {
+    -webkit-animation-delay: .75s; /* Chrome, Safari, Opera */
+    animation-delay: .75s;
+  }
+  li:nth-child(4) {
+    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 1s;
+  }
+  &.active {
+    transform: translateY(0%);
+  }
+  .nav-logo {
+    margin-top: 90px;
+    margin-bottom:30px;
+  }
+  ul {
+    width: 70%;
+    margin: 0 auto;
   }
 }

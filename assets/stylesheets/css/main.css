@@ -234,12 +234,60 @@ nav {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 126, 0, 0.9);
   transform-origin: bottom;
   transform: scaleY(0);
   transition: transform 0.3s ease-out; }
   .blur-overlay.active {
     transform: scale(1); }
+
+.nav-fullscreen {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 126, 0, 0.9);
+  z-index: 5000;
+  height: 100%;
+  width: 100%;
+  transform-origin: top;
+  transform: translateY(-150%);
+  transition: all 0.5s ease-out; }
+  .nav-fullscreen .social-bar {
+    margin-top: 30px;
+    color: white;
+    background-color: transparent;
+    border: 0; }
+    .nav-fullscreen .social-bar li {
+      display: inline-block;
+      font-size: 2.618em;
+      width: 20%; }
+  .nav-fullscreen li {
+    margin-bottom: 10px;
+    font-size: 1.618em; }
+  .nav-fullscreen li:nth-child(1) {
+    -webkit-animation-delay: .25s;
+    /* Chrome, Safari, Opera */
+    animation-delay: .25s; }
+  .nav-fullscreen li:nth-child(2) {
+    -webkit-animation-delay: .5s;
+    /* Chrome, Safari, Opera */
+    animation-delay: .5s; }
+  .nav-fullscreen li:nth-child(3) {
+    -webkit-animation-delay: .75s;
+    /* Chrome, Safari, Opera */
+    animation-delay: .75s; }
+  .nav-fullscreen li:nth-child(4) {
+    -webkit-animation-delay: 1s;
+    /* Chrome, Safari, Opera */
+    animation-delay: 1s; }
+  .nav-fullscreen.active {
+    transform: translateY(0%); }
+  .nav-fullscreen .nav-logo {
+    margin-top: 90px;
+    margin-bottom: 30px; }
+  .nav-fullscreen ul {
+    width: 70%;
+    margin: 0 auto; }
 
 header {
   width: 100%;
@@ -346,7 +394,7 @@ footer {
   footer i.fa {
     font-size: 2.218em;
     text-align: center;
-    width: 50%;
+    width: 100%;
     cursor: pointer;
     padding: 15px;
     padding-left: 25px;
@@ -495,13 +543,13 @@ header.header-home .caption {
   letter-spacing: 4px;
   font-weight: 300;
   margin-bottom: 20px;
-  font-size: 50px; }
+  font-size: 3.125em; }
 
 .feature-text {
   padding-top: 140px; }
   .feature-text p {
     line-height: 1.6;
-    font-size: 20px;
+    font-size: 1.250em;
     font-weight: 300; }
 
 .quotes-slider {
@@ -576,7 +624,7 @@ header.header-home .caption {
   margin-bottom: 80px; }
 
 .section-blog {
-  background-image: url("../../img/Background.png");
+  background-image: url("../../img/Background-half.jpg");
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -636,18 +684,38 @@ header.header-home .caption {
 .gm-style-iw + div {
   display: none; }
 
+.feature-text {
+  padding: 20px; }
+
+.feature-heading {
+  margin-top: 160px; }
+
 /* ---------------- */
 /*     Utilities    */
 /* ---------------- */
 .nav-fullscreen {
   display: none; }
 
+/* ------------------ */
+/* MEDIUM SCREEN SIZE */
+/* ------------------ */
 @media screen and (max-width: 990px) {
+  body {
+    font-size: 14px !important; }
   header {
     height: 600px; }
+  .section {
+    padding-top: 90px;
+    padding-bottom: 90px; }
   .caption {
     margin-top: 50px;
     margin-bottom: 10px; }
+  .feature-heading {
+    font-size: 2.618em;
+    margin-top: 5vh;
+    letter-spacing: 2px; }
+  .feature-image img {
+    max-height: 420px; }
   .feature-text {
     padding-top: 0px; }
   .header-home {
@@ -656,6 +724,9 @@ header.header-home .caption {
       margin-top: 60px; }
     .header-home nav {
       padding-top: 0px; }
+  .about-feature p {
+    margin: 0 auto;
+    width: 60%; }
   .section p {
     line-height: 1.6;
     margin-bottom: 20px; }
@@ -692,62 +763,28 @@ header.header-home .caption {
     width: 90%;
     max-width: 300px;
     text-align: center; }
-  .nav-fullscreen {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    background-color: rgba(255, 126, 0, 0.9);
-    z-index: 5000;
-    height: 100%;
-    width: 100%;
-    transform-origin: top;
-    transform: translateY(-150%);
-    transition: all 0.5s ease-out; }
-    .nav-fullscreen .social-bar {
-      margin-top: 30px;
-      color: white;
-      background-color: transparent;
-      border: 0; }
-      .nav-fullscreen .social-bar li {
-        display: inline-block;
-        font-size: 2.618em;
-        width: 20%; }
-    .nav-fullscreen li {
-      margin-bottom: 10px;
-      font-size: 1.618em; }
-    .nav-fullscreen li:nth-child(1) {
-      -webkit-animation-delay: .25s;
-      /* Chrome, Safari, Opera */
-      animation-delay: .25s; }
-    .nav-fullscreen li:nth-child(2) {
-      -webkit-animation-delay: .5s;
-      /* Chrome, Safari, Opera */
-      animation-delay: .5s; }
-    .nav-fullscreen li:nth-child(3) {
-      -webkit-animation-delay: .75s;
-      /* Chrome, Safari, Opera */
-      animation-delay: .75s; }
-    .nav-fullscreen li:nth-child(4) {
-      -webkit-animation-delay: 1s;
-      /* Chrome, Safari, Opera */
-      animation-delay: 1s; }
-    .nav-fullscreen.active {
-      transform: translateY(0%); }
-    .nav-fullscreen .nav-logo {
-      margin-top: 90px;
-      margin-bottom: 30px; }
-    .nav-fullscreen ul {
-      width: 70%;
-      margin: 0 auto; }
   .nav-right {
     display: block; }
     .nav-right ul li {
       width: 100%;
       display: block; } }
 
-@media screen and (max-width: 776px) {
+/* -----------=----------- */
+/*  END MEDIUM SCREEN SIZE */
+/* ------------=---------- */
+/* ------------------ */
+/*  SMALL SCREEN SIZE */
+/* ------------------ */
+@media screen and (max-width: 768px) {
   body {
-    font-size: 14px; }
+    font-size: 12px !important; }
+  .menu-button-wrapper {
+    top: -10px;
+    right: 20px; }
+  .feature-image img {
+    max-height: 600px;
+    display: block;
+    margin: 0 auto; }
   .article-snippet {
     width: 90%; }
     .article-snippet span.date {
@@ -757,9 +794,12 @@ header.header-home .caption {
   .caption {
     width: 80%;
     margin-top: 60px; }
-  .menu-button-wrapper {
-    top: 0px;
-    right: 30px; }
+  .nav-fullscreen .nav-logo {
+    margin-top: 45px; }
+  .menu-button div {
+    width: 30px;
+    height: 3px;
+    border-radius: 60px; }
   .btn-geekin {
     min-width: 200px; }
   .col-press-image {
@@ -781,6 +821,20 @@ header.header-home .caption {
     margin: 0 auto;
     margin-bottom: 60px; } }
 
+/* ---------------------- */
+/*  END SMALL SCREEN SIZE */
+/* ---------------------- */
+/* ---------------------- */
+/*  XTRASMALL SCREEN SIZE */
+/* ---------------------- */
+@media screen and (max-width: 500px) {
+  .menu-button-wrapper {
+    top: -20px;
+    right: 15px; } }
+
+/* ---------------------- */
+/* END XSMALL SCREEN SIZE */
+/* ---------------------- */
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
