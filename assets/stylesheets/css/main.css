@@ -16,7 +16,8 @@
   max-width: 1154px; }
 
 body {
-  transition: all 0.3s ease-out; }
+  -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
 
 ul {
   padding: 0px;
@@ -89,7 +90,8 @@ a:hover {
   color: #FF7E00;
   padding-bottom: 3px;
   border-bottom: 1px solid rgba(255, 126, 0, 0.2);
-  transition: opacity 0.3s ease-out; }
+  -webkit-transition: opacity 0.3s ease-out;
+          transition: opacity 0.3s ease-out; }
   .orange-link:hover {
     color: #FF7E00;
     opacity: .8; }
@@ -153,7 +155,8 @@ nav {
         color: white;
         opacity: .7;
         letter-spacing: 4px;
-        transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+                transition: all 0.3s ease-out;
         font-size: 1.18em; }
         .nav-center ul li a.active,
         .nav-right ul li a.active {
@@ -176,7 +179,8 @@ nav {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 100%;
   border: 4px solid rgba(255, 255, 255, 0.6);
-  transition: background-color 0.3s ease-out; }
+  -webkit-transition: background-color 0.3s ease-out;
+          transition: background-color 0.3s ease-out; }
   .play-button-wrapper:hover {
     background-color: rgba(0, 0, 0, 0.5);
     border-color: white; }
@@ -192,17 +196,25 @@ nav {
   height: 40px;
   z-index: 6001; }
   .menu-button-wrapper:hover .menu-button div:first-child {
-    transform: translateY(-5px); }
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px); }
   .menu-button-wrapper:hover .menu-button div:last-child {
-    transform: translateY(5px); }
+    -webkit-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+            transform: translateY(5px); }
   .menu-button-wrapper .menu-button.active div {
     background-color: white; }
   .menu-button-wrapper .menu-button.active div:first-child {
-    transform: rotate(45deg) translateY(5px) translateX(10px); }
+    -webkit-transform: rotate(45deg) translateY(5px) translateX(10px);
+        -ms-transform: rotate(45deg) translateY(5px) translateX(10px);
+            transform: rotate(45deg) translateY(5px) translateX(10px); }
   .menu-button-wrapper .menu-button.active div.middle {
     opacity: 0; }
   .menu-button-wrapper .menu-button.active div:last-child {
-    transform: rotate(-45deg) translateY(-5px) translateX(10px); }
+    -webkit-transform: rotate(-45deg) translateY(-5px) translateX(10px);
+        -ms-transform: rotate(-45deg) translateY(-5px) translateX(10px);
+            transform: rotate(-45deg) translateY(-5px) translateX(10px); }
 
 .menu-button.orange div {
   background-color: #FF7E00; }
@@ -215,7 +227,8 @@ nav {
   height: 4px;
   border-radius: 40px;
   background-color: white;
-  transition: all 0.3s ease-out; }
+  -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
 
 .menu-button div:first-child {
   top: 0px; }
@@ -235,11 +248,18 @@ nav {
   height: 100%;
   width: 100%;
   background-color: rgba(255, 126, 0, 0.9);
-  transform-origin: bottom;
-  transform: scaleY(0);
-  transition: transform 0.3s ease-out; }
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+          transition: transform 0.3s ease-out; }
   .blur-overlay.active {
-    transform: scale(1); }
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1); }
 
 .nav-fullscreen {
   position: fixed;
@@ -249,9 +269,14 @@ nav {
   z-index: 5000;
   height: 100%;
   width: 100%;
-  transform-origin: top;
-  transform: translateY(-150%);
-  transition: all 0.5s ease-out; }
+  -webkit-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: translateY(-150%);
+      -ms-transform: translateY(-150%);
+          transform: translateY(-150%);
+  -webkit-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out; }
   .nav-fullscreen .social-bar {
     margin-top: 30px;
     color: white;
@@ -281,7 +306,9 @@ nav {
     /* Chrome, Safari, Opera */
     animation-delay: 1s; }
   .nav-fullscreen.active {
-    transform: translateY(0%); }
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%); }
   .nav-fullscreen .nav-logo {
     margin-top: 90px;
     margin-bottom: 30px; }
@@ -352,7 +379,8 @@ header {
   border-radius: 4px;
   color: white;
   background-color: transparent;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
   cursor: pointer; }
   .download-button:hover {
     background-color: rgba(0, 0, 0, 0.3);
@@ -405,7 +433,8 @@ footer {
     color: #07143A;
     opacity: .5; }
   footer i, footer a {
-    transition: all 0.3s ease-out; }
+    -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out; }
     footer i:hover, footer a:hover {
       opacity: 1; }
   footer p {
@@ -425,7 +454,8 @@ footer {
   min-width: 320px;
   text-align: center;
   border-radius: 40px;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
   font-size: 1.118em; }
   .btn-geekin:hover {
     color: inherit;
@@ -462,7 +492,8 @@ footer {
     color: white;
     background-color: transparent;
     text-transform: uppercase;
-    transition: opacity 0.3s ease-out;
+    -webkit-transition: opacity 0.3s ease-out;
+            transition: opacity 0.3s ease-out;
     outline: none;
     border: 0;
     font-size: 1.218em; }
@@ -475,7 +506,8 @@ footer {
     margin-bottom: 30px;
     border: 0;
     border-bottom: 2px solid #ff8b1a;
-    transition: border-color 0.3s ease-out;
+    -webkit-transition: border-color 0.3s ease-out;
+            transition: border-color 0.3s ease-out;
     background-color: transparent;
     color: white;
     font-size: 2.218em;
@@ -524,7 +556,8 @@ footer {
         display: block;
         height: 100%;
         color: #B6BCCD;
-        transition: color 0.3s ease-out; }
+        -webkit-transition: color 0.3s ease-out;
+                transition: color 0.3s ease-out; }
         .social-bar ul li a:hover {
           color: #7984a4; }
       .social-bar ul li:last-child {
@@ -855,6 +888,11 @@ header.header-home .caption {
 
 .prl {
   padding-right: 20px; }
+
+::-moz-selection {
+  color: white;
+  background: rgba(255, 126, 0, 0.6);
+  /* Gecko Browsers */ }
 
 ::selection {
   color: white;
