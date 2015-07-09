@@ -9,7 +9,8 @@ $(document).ready(function() {
       $blurOverlay = $('.blur-overlay');
 
   var headerOffset = $('header').height(),
-      subscribeBarOffest = $('div.subscribe').offset().top;
+      subscribeBarOffest = $('div.subscribe').offset().top,
+      navItems = $('.nav-fullscreen li');
 
   // In case page loads below header, show menu button
   // as orange by default

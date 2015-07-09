@@ -1,12 +1,17 @@
 $(document).ready(function() {
 
+  'use strict';
+
   var map;
+  var geekinHQ = {
+    lat: 32.795004,
+    lng: -79.942797
+  };
 
   function initialize() {
     map = new google.maps.Map(document.getElementById('map-canvas'), {
       zoom: 15,
-      center: {lat: 32.799, lng: -79.942},
-      offCenter: {lat: 32.794, lng: -79.942},
+      center: geekinHQ,
       disableDefaultUI: true,
       navigationControl: false,
       mapTypeControl: false,
@@ -165,19 +170,19 @@ $(document).ready(function() {
     };
 
     var marker = new google.maps.Marker({
-      position: map.offCenter,
+      position: geekinHQ,
       icon: circle,
       map: map,
       title: 'Our Location'
     });
 
     var contentString = '<div id="map-infowindow-content">'+
-                          '<h2 id="firstHeading" class="firstHeading">FIND GEEKIN</h1>'+
+                          '<h2 id="firstHeading" class="firstHeading">GEEKIN HQ</h1>'+
                           '<div id="mapMarkerWindow">'+
                             '<p>647 B King Street,</p>'+
                             '<p>Charleston, 29403 SC</p>'+
                           '</div>'+
-                          '<a href="https://goo.gl/maps/h1yiI" target="_blank">Find us</a>'+
+                          '<a class="map-link" href="https://www.google.com/maps/place/647+King+St,+Charleston,+SC+29403/@32.7950124,-79.9427815,17z/data=!3m1!4b1!4m2!3m1!1s0x88fe7a4288489cbf:0xe72417519af64f7f" target="_blank">Find us</a>'+
                         '</div>';
 
     var infowindow = new google.maps.InfoWindow({
@@ -185,11 +190,15 @@ $(document).ready(function() {
         borderRadius: 30
     });
 
-    google.maps.event.addListener(marker, 'click', function() {
-      infowindow.open(map,marker);
-    });
-
     infowindow.open(map,marker);
   }
+
+  // Initilalizes map on window load
   google.maps.event.addDomListener(window, 'load', initialize);
+
+  // Recenters map on window resize
+  google.maps.event.addDomListener(window, 'resize', function() {
+    map.setCenter(geekinHQ);
+  });
+
 });
