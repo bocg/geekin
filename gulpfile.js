@@ -35,6 +35,9 @@ var jshint = require('gulp-jshint'),
       return gulp.src('assets/stylesheets/scss/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({ errLogToConsole: true }).on('error', sass.logError))
+        .pipe(autoprefixer({
+          browser: ['last 2 versions'],
+        }))
         .pipe(sourcemaps.write('/'))
         .pipe(gulp.dest('assets/stylesheets/css'))
     });
