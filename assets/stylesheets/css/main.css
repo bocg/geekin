@@ -834,7 +834,8 @@ header.header-home .caption {
     height: 3px;
     border-radius: 60px; }
   .btn-geekin {
-    min-width: 200px; }
+    min-width: 200px;
+    letter-spacing: 1px; }
   .col-press-image {
     text-align: center; }
   .section-header .section-subheader {
@@ -863,7 +864,25 @@ header.header-home .caption {
 @media screen and (max-width: 500px) {
   .menu-button-wrapper {
     top: -20px;
-    right: 15px; } }
+    right: 15px; }
+  header {
+    height: 480px; } }
+
+@media screen and (max-width: 350px) {
+  .caption {
+    width: 90%; }
+    .caption h1 {
+      font-size: 2.818em; }
+    .caption p {
+      width: 100%; }
+  header.header-home {
+    height: 480px; }
+    header.header-home .caption {
+      width: 95%; }
+      header.header-home .caption h1 {
+        font-size: 2.618em; }
+  .btn-geekin {
+    padding: 15px 20px; } }
 
 /* ---------------------- */
 /* END XSMALL SCREEN SIZE */
