@@ -158,7 +158,10 @@
     border-radius: 60px;
   }
 
-  .btn-geekin { min-width:200px; }
+  .btn-geekin {
+    min-width: 200px;
+    letter-spacing: 1px;
+  }
 
   .col-press-image { text-align: center; }
 
@@ -204,6 +207,32 @@
     top: -20px;
     right:15px;
   }
+  header { height: 480px; }
+}
+@media screen and (max-width:350px){
+  .caption {
+    width: 90%;
+
+    h1 { font-size: 2.818em; }
+
+    p { width: 100%; }
+  }
+
+  header.header-home {
+    height: 480px;
+
+    .caption {
+      width: 95%;
+      h1 {
+        font-size: 2.618em;
+      }
+    }
+  }
+
+  .btn-geekin {
+    padding: 15px 20px;
+  }
+
 }
 /* ---------------------- */
 /* END XSMALL SCREEN SIZE */

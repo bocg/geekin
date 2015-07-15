@@ -28,12 +28,11 @@ $(document).ready(function() {
     $body.toggleClass('no-scroll');
     $blurOverlay.toggleClass('active');
 
-    // ANIMATES NAV ITEMS - Delay set in CSS
+    // Animates Nav Items -- Delays set in CSS
     for ( var i = 0 ; i < navItems.length ; i++ ) {
       $(navItems[i]).toggleClass('animated');
       $(navItems[i]).toggleClass('fadeIn');
     }
-
   });
 
   // Changes color of menu button if scrolling past header
