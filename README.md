@@ -1,6 +1,6 @@
 # geekin
 Website for geekin radio -- http://www.getgeek.in/
-This site is in development at the following -- geekin-radio.github.io/geekin
+This site is in development at the following -- http://geekin-radio.github.io/geekin
 
 ##When downloading/cloning this repo...
 
