@@ -2,7 +2,14 @@
   display:none;
 }
 
-
+@media screen and (max-width: 1096px){
+  .quote-left {
+    left: 5%;
+  }
+  .quote-right {
+    right: 5%;
+  }
+}
 
 /* ------------------ */
 /* MEDIUM SCREEN SIZE */
@@ -12,6 +19,8 @@
   body { font-size: 14px !important; }
 
   header { height: 600px; }
+
+  .container-quotes { max-width: 440px; }
 
   .section {
     padding-top: 90px;
@@ -196,6 +205,15 @@
 /* ---------------------- */
 
 
+
+@media screen and (max-width: 600px ){
+  .quote-mark { display: none; }
+  .quote {
+    p {
+      font-size: .818em;
+    }
+  }
+}
 
 
 

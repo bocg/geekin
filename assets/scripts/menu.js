@@ -4,6 +4,7 @@ $(document).ready(function() {
 
   // Caching jQuery Variables for optimization
   var $body = $('body'),
+      $header = $('header'),
       $menuButton = $('.menu-button'),
       $fullScreenMenu = $('.nav-fullscreen'),
       $blurOverlay = $('.blur-overlay');
@@ -14,7 +15,7 @@ $(document).ready(function() {
 
   // In case page loads below header, show menu button
   // as orange by default
-  if ( $(window).scrollTop() > 60 + $('header').height() ) {
+  if ( $(window).scrollTop() > 60 + $header.height() ) {
     $menuButton.addClass('orange');
   }
 

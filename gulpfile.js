@@ -129,7 +129,7 @@ var jshint = require('gulp-jshint'),
     gulp.task('server-build', function() {
       browsersync.init({
         server: 'dist',
-        port: '4040'
+        port: 4040
       })
     });
 
