@@ -94,10 +94,10 @@ nav {
   height:40px;
   z-index:6001;
   &:hover .menu-button div:first-child {
-    transform:translateY(-5px);
+    transform:translateY(-3px);
   }
   &:hover .menu-button div:last-child {
-    transform:translateY(5px);
+    transform:translateY(3px);
   }
   .menu-button.active {
     div {
